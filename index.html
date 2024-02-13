@@ -1,176 +1,554 @@
 <!DOCTYPE html>
 
-<html class="js svg audio canvas cssremunit csscalc cssgradients supports no-touchevents video cssanimations cssfilters flexbox flexboxlegacy no-flexboxtweener flexwrap csstransforms csstransforms3d csstransitions backgroundblendmode cl-loaded" lang="en" style="" data-useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36">
-   <!--<![endif]-->
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>IMPETUS</title>
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="./base.css">
-      <link rel="stylesheet" href="./vendor.css">
-      <link rel="stylesheet" href="./main.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-       <!-- CSS links-->
-      </script><link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
-      <link rel="icon" type="image/x-icon" href="./light_handle.png">
-      <script defer="" referrerpolicy="origin" src="./s.js"></script><script src="./modernizr.js"></script> <script src="./pace.min.js"></script> 
-      <script nonce="b500709a-58ce-4f38-ae44-18173db3e4ce">(function(w,d){!function(f,g,h,i){f[h]=f[h]||{};f[h].executed=[];f.zaraz={deferred:[],listeners:[]};f.zaraz.q=[];f.zaraz._f=function(j){return function(){var k=Array.prototype.slice.call(arguments);f.zaraz.q.push({m:j,a:k})}};for(const l of["track","set","debug"])f.zaraz[l]=f.zaraz._f(l);f.zaraz.init=()=>{var m=g.getElementsByTagName(i)[0],n=g.createElement(i),o=g.getElementsByTagName("title")[0];o&&(f[h].t=g.getElementsByTagName("title")[0].text);f[h].x=Math.random();f[h].w=f.screen.width;f[h].h=f.screen.height;f[h].j=f.innerHeight;f[h].e=f.innerWidth;f[h].l=f.location.href;f[h].r=g.referrer;f[h].k=f.screen.colorDepth;f[h].n=g.characterSet;f[h].o=(new Date).getTimezoneOffset();if(f.dataLayer)for(const s of Object.entries(Object.entries(dataLayer).reduce(((t,u)=>({...t[1],...u[1]})))))zaraz.set(s[0],s[1],{scope:"page"});f[h].q=[];for(;f.zaraz.q.length;){const v=f.zaraz.q.shift();f[h].q.push(v)}n.defer=!0;for(const w of[localStorage,sessionStorage])Object.keys(w||{}).filter((y=>y.startsWith("_zaraz_"))).forEach((x=>{try{f[h]["z_"+x.slice(7)]=JSON.parse(w.getItem(x))}catch{f[h]["z_"+x.slice(7)]=w.getItem(x)}}));n.referrerPolicy="origin";n.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(f[h])));m.parentNode.insertBefore(n,m)};["complete","interactive"].includes(g.readyState)?zaraz.init():f.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script>
-      <style data-styled="active" data-styled-version="5.3.3">.eUHcVO{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-flex:1;-ms-flex:1;flex:1;min-height:0;}.blwkrT{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;border-radius:6px;border:none;outline:none;height:40px;line-height:inherit;font-size:14px;font-weight:500;padding:0 10px;width:auto;cursor:pointer;-webkit-transition-property:background-color,color,opacity;transition-property:background-color,color,opacity;-webkit-transition-duration:0.2s;transition-duration:0.2s;white-space:nowrap;background-color:#000000;color:#FFFFFF;}.blwkrT:hover,.blwkrT:active,.blwkrT:focus{background-color:#DA3832;}.kgtBlH{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;border-radius:6px;border:none;outline:none;height:40px;line-height:inherit;font-size:14px;font-weight:500;padding:0 10px;width:auto;cursor:pointer;-webkit-transition-property:background-color,color,opacity;transition-property:background-color,color,opacity;-webkit-transition-duration:0.2s;transition-duration:0.2s;white-space:nowrap;background-color:rgba(0,0,0,0.1);color:#000000;}.kgtBlH:hover,.kgtBlH:active,.kgtBlH:focus{background-color:rgba(0,0,0,0.2);}.idcWUa{width:24px;height:24px;-webkit-mask-image:url(chrome-extension://hbklahkfbghjgbclbfcnhpfmajkagnci/icons/close.svg);mask-image:url(chrome-extension://hbklahkfbghjgbclbfcnhpfmajkagnci/icons/close.svg);-webkit-mask-position:center center;mask-position:center center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:cover;mask-size:cover;background-color:#8C8B8A;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;cursor:pointer;}.indTSF{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;cursor:default;}.dmbedZ{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;cursor:pointer;}.fmghtm{width:20px;height:20px;background-image:url(chrome-extension://hbklahkfbghjgbclbfcnhpfmajkagnci/icons/48x48_red.png);background-position:center center;background-repeat:no-repeat;background-size:cover;}.ftYOKN{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}.fPYnWN{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;}.JRoxh{padding:0px;height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;background:#fcfcfc;margin-bottom:-2px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;position:relative;z-index:100;border-top-left-radius:10px;border-top-right-radius:10px;cursor:move;}.jaMNJO{margin-left:4px;width:18px;height:18px;cursor:pointer;}.bnfxPj{position:absolute;top:50%;right:10px;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.dIuWHJ{display:none;position:fixed;z-index:99999;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,0.4);}.kZcOAB{background-color:#fefefe;padding:20px;border:1px solid #888888;width:360px;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-animation-name:animatetop;animation-name:animatetop;-webkit-animation-duration:0.4s;animation-duration:0.4s;border-radius:12px;}@media (max-width:812px){.kZcOAB{width:85% !important;}}.kZcOAB > div:not(:last-child){margin-bottom:30px;}.bJwUBx{padding:0;}.fOGVrh{margin:0;font-weight:600;font-size:20px;line-height:26px;color:#000000;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.jgEzBl{position:absolute;top:10px;right:10px;}.eWgdsE{padding:0;}.cximxh{padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;gap:5px;}.fOCdIe{width:40px;display:inline-block;}.befcyA{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;min-height:0;border-radius:10px;}</style>
-   </head>
-   <body id="top" class=" vsc-initialized pace-done" data-aos-easing="ease-in-sine" data-aos-duration="600" data-aos-delay="300">
-      <div class="loader-wrapper">
-         <div class="loader"><img alt="" src="./e2e80b0a55c5bbb2e2ba02aa05ab8de4.gif" style="height: 60vh; width: 40vw; max-width: 300px; max-height: 300px;">
-  <div class="typewriter">LOADING</div>
-</div>
-      </div>
-      </center>
-      <div id="loading"></div>  
-      <div class="parallax-mirror" style="visibility: visible; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 910.875px; width: 1905px;"><img alt="" class="parallax-slider" src="./hero-bg.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; left: 0px; height: 1270px; width: 1905px; max-width: none; top: -193px;"></div>
-      <div class="pace  pace-inactive">
-         <div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
-            <div class="pace-progress-inner"></div>
-         </div>
-         <div class="pace-activity"></div>
-      </div>
-      <header class="s-header">
-         <div class="header-logo"><h2 style="color:#FFFFFF;">IMPETUS</h2></div>
-         <nav class="header-nav">
-            <a  class="header-nav__close" title="close"><span>Close</span></a>
-            <div class="header-nav__content">
-               <h3 style="font-size: 22px;">Navigation</h3>
-               <ul class="header-nav__list">
-                  <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
-                  <li><a class="smoothscroll" href="#services" title="about">About IMPETUS</a></li>
-                  <li><a class="smoothscroll" href="#about" title="about">About Theme</a></li>
-                  <li><a href="./events.html" >Events </a></li>
-                  <li><a class="smoothscroll" href="#clients" title="clients">Gallery</a></li>
-                  <li><a class="smoothscroll" href="#contact" title="contact">Contact</a></li>
-               </ul>
+<html
+   class="js svg audio canvas cssremunit csscalc cssgradients supports no-touchevents video cssanimations cssfilters flexbox flexboxlegacy no-flexboxtweener flexwrap csstransforms csstransforms3d csstransitions backgroundblendmode cl-loaded"
+   lang="en" style=""
+   data-useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36">
+<!--<![endif]-->
 
-            </div>
-         </nav>
-         <a class="header-menu-toggle" > <span class="header-menu-text"></span> <span class="header-menu-icon"></span> </a>
-      </header>
-      <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="./5335769.jpg" data-natural-width="3000" data-natural-height="2000" data-position-y="center">
-         <center> 
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>IMPETUS</title>
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="./base.css">
+   <link rel="stylesheet" href="./vendor.css">
+   <link rel="stylesheet" href="./main.css">
+   <link rel="stylesheet" href="hero.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- CSS links-->
+   </script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+   <link rel="icon" type="image/x-icon" href="./light_handle.png">
+   <script defer="" referrerpolicy="origin" src="./s.js"></script>
+   <script src="./modernizr.js"></script>
+   <script src="./pace.min.js"></script>
+   <script
+      nonce="b500709a-58ce-4f38-ae44-18173db3e4ce">(function (w, d) { !function (f, g, h, i) { f[h] = f[h] || {}; f[h].executed = []; f.zaraz = { deferred: [], listeners: [] }; f.zaraz.q = []; f.zaraz._f = function (j) { return function () { var k = Array.prototype.slice.call(arguments); f.zaraz.q.push({ m: j, a: k }) } }; for (const l of ["track", "set", "debug"]) f.zaraz[l] = f.zaraz._f(l); f.zaraz.init = () => { var m = g.getElementsByTagName(i)[0], n = g.createElement(i), o = g.getElementsByTagName("title")[0]; o && (f[h].t = g.getElementsByTagName("title")[0].text); f[h].x = Math.random(); f[h].w = f.screen.width; f[h].h = f.screen.height; f[h].j = f.innerHeight; f[h].e = f.innerWidth; f[h].l = f.location.href; f[h].r = g.referrer; f[h].k = f.screen.colorDepth; f[h].n = g.characterSet; f[h].o = (new Date).getTimezoneOffset(); if (f.dataLayer) for (const s of Object.entries(Object.entries(dataLayer).reduce(((t, u) => ({ ...t[1], ...u[1] }))))) zaraz.set(s[0], s[1], { scope: "page" }); f[h].q = []; for (; f.zaraz.q.length;) { const v = f.zaraz.q.shift(); f[h].q.push(v) } n.defer = !0; for (const w of [localStorage, sessionStorage]) Object.keys(w || {}).filter((y => y.startsWith("_zaraz_"))).forEach((x => { try { f[h]["z_" + x.slice(7)] = JSON.parse(w.getItem(x)) } catch { f[h]["z_" + x.slice(7)] = w.getItem(x) } })); n.referrerPolicy = "origin"; n.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(f[h]))); m.parentNode.insertBefore(n, m) };["complete", "interactive"].includes(g.readyState) ? zaraz.init() : f.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
+   <style data-styled="active" data-styled-version="5.3.3">
+      .eUHcVO {
+         display: -webkit-box;
+         display: -webkit-flex;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-flex-direction: column;
+         -ms-flex-direction: column;
+         flex-direction: column;
+         -webkit-flex: 1;
+         -ms-flex: 1;
+         flex: 1;
+         min-height: 0;
+      }
+
+      .blwkrT {
+         display: -webkit-inline-box;
+         display: -webkit-inline-flex;
+         display: -ms-inline-flexbox;
+         display: inline-flex;
+         -webkit-align-items: center;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         align-items: center;
+         -webkit-box-pack: center;
+         -webkit-justify-content: center;
+         -ms-flex-pack: center;
+         justify-content: center;
+         border-radius: 6px;
+         border: none;
+         outline: none;
+         height: 40px;
+         line-height: inherit;
+         font-size: 14px;
+         font-weight: 500;
+         padding: 0 10px;
+         width: auto;
+         cursor: pointer;
+         -webkit-transition-property: background-color, color, opacity;
+         transition-property: background-color, color, opacity;
+         -webkit-transition-duration: 0.2s;
+         transition-duration: 0.2s;
+         white-space: nowrap;
+         background-color: #000000;
+         color: #FFFFFF;
+      }
+
+      .blwkrT:hover,
+      .blwkrT:active,
+      .blwkrT:focus {
+         background-color: #DA3832;
+      }
+
+      .kgtBlH {
+         display: -webkit-inline-box;
+         display: -webkit-inline-flex;
+         display: -ms-inline-flexbox;
+         display: inline-flex;
+         -webkit-align-items: center;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         align-items: center;
+         -webkit-box-pack: center;
+         -webkit-justify-content: center;
+         -ms-flex-pack: center;
+         justify-content: center;
+         border-radius: 6px;
+         border: none;
+         outline: none;
+         height: 40px;
+         line-height: inherit;
+         font-size: 14px;
+         font-weight: 500;
+         padding: 0 10px;
+         width: auto;
+         cursor: pointer;
+         -webkit-transition-property: background-color, color, opacity;
+         transition-property: background-color, color, opacity;
+         -webkit-transition-duration: 0.2s;
+         transition-duration: 0.2s;
+         white-space: nowrap;
+         background-color: rgba(0, 0, 0, 0.1);
+         color: #000000;
+      }
+
+      .kgtBlH:hover,
+      .kgtBlH:active,
+      .kgtBlH:focus {
+         background-color: rgba(0, 0, 0, 0.2);
+      }
+
+      .idcWUa {
+         width: 24px;
+         height: 24px;
+         -webkit-mask-image: url(chrome-extension://hbklahkfbghjgbclbfcnhpfmajkagnci/icons/close.svg);
+         mask-image: url(chrome-extension://hbklahkfbghjgbclbfcnhpfmajkagnci/icons/close.svg);
+         -webkit-mask-position: center center;
+         mask-position: center center;
+         -webkit-mask-repeat: no-repeat;
+         mask-repeat: no-repeat;
+         -webkit-mask-size: cover;
+         mask-size: cover;
+         background-color: #8C8B8A;
+         -webkit-flex-shrink: 0;
+         -ms-flex-negative: 0;
+         flex-shrink: 0;
+         cursor: pointer;
+      }
+
+      .indTSF {
+         display: -webkit-box;
+         display: -webkit-flex;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-align-items: center;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         align-items: center;
+         cursor: default;
+      }
+
+      .dmbedZ {
+         display: -webkit-box;
+         display: -webkit-flex;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-align-items: center;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         align-items: center;
+         cursor: pointer;
+      }
+
+      .fmghtm {
+         width: 20px;
+         height: 20px;
+         background-image: url(chrome-extension://hbklahkfbghjgbclbfcnhpfmajkagnci/icons/48x48_red.png);
+         background-position: center center;
+         background-repeat: no-repeat;
+         background-size: cover;
+      }
+
+      .ftYOKN {
+         display: -webkit-box;
+         display: -webkit-flex;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-align-items: center;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         align-items: center;
+         -webkit-box-pack: center;
+         -webkit-justify-content: center;
+         -ms-flex-pack: center;
+         justify-content: center;
+      }
+
+      .fPYnWN {
+         display: -webkit-inline-box;
+         display: -webkit-inline-flex;
+         display: -ms-inline-flexbox;
+         display: inline-flex;
+      }
+
+      .JRoxh {
+         padding: 0px;
+         height: -webkit-fit-content;
+         height: -moz-fit-content;
+         height: fit-content;
+         background: #fcfcfc;
+         margin-bottom: -2px;
+         display: -webkit-box;
+         display: -webkit-flex;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-align-items: center;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         align-items: center;
+         -webkit-box-pack: justify;
+         -webkit-justify-content: space-between;
+         -ms-flex-pack: justify;
+         justify-content: space-between;
+         position: relative;
+         z-index: 100;
+         border-top-left-radius: 10px;
+         border-top-right-radius: 10px;
+         cursor: move;
+      }
+
+      .jaMNJO {
+         margin-left: 4px;
+         width: 18px;
+         height: 18px;
+         cursor: pointer;
+      }
+
+      .bnfxPj {
+         position: absolute;
+         top: 50%;
+         right: 10px;
+         -webkit-transform: translateY(-50%);
+         -ms-transform: translateY(-50%);
+         transform: translateY(-50%);
+         display: -webkit-box;
+         display: -webkit-flex;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-align-items: center;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         align-items: center;
+      }
+
+      .dIuWHJ {
+         display: none;
+         position: fixed;
+         z-index: 99999;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         overflow: auto;
+         background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      .kZcOAB {
+         background-color: #fefefe;
+         padding: 20px;
+         border: 1px solid #888888;
+         width: 360px;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         -webkit-transform: translate(-50%, -50%);
+         -ms-transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);
+         -webkit-animation-name: animatetop;
+         animation-name: animatetop;
+         -webkit-animation-duration: 0.4s;
+         animation-duration: 0.4s;
+         border-radius: 12px;
+      }
+
+      @media (max-width:812px) {
+         .kZcOAB {
+            width: 85% !important;
+         }
+      }
+
+      .kZcOAB>div:not(:last-child) {
+         margin-bottom: 30px;
+      }
+
+      .bJwUBx {
+         padding: 0;
+      }
+
+      .fOGVrh {
+         margin: 0;
+         font-weight: 600;
+         font-size: 20px;
+         line-height: 26px;
+         color: #000000;
+         display: -webkit-box;
+         display: -webkit-flex;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-align-items: center;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         align-items: center;
+      }
+
+      .jgEzBl {
+         position: absolute;
+         top: 10px;
+         right: 10px;
+      }
+
+      .eWgdsE {
+         padding: 0;
+      }
+
+      .cximxh {
+         padding: 0;
+         display: -webkit-box;
+         display: -webkit-flex;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-pack: center;
+         -webkit-justify-content: center;
+         -ms-flex-pack: center;
+         justify-content: center;
+         gap: 5px;
+      }
+
+      .fOCdIe {
+         width: 40px;
+         display: inline-block;
+      }
+
+      .befcyA {
+         display: -webkit-box;
+         display: -webkit-flex;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-flex-direction: column;
+         -ms-flex-direction: column;
+         flex-direction: column;
+         -webkit-box-flex: 1;
+         -webkit-flex-grow: 1;
+         -ms-flex-positive: 1;
+         flex-grow: 1;
+         min-height: 0;
+         border-radius: 10px;
+      }
+   </style>
+</head>
+
+<body id="top" class=" vsc-initialized pace-done" data-aos-easing="ease-in-sine" data-aos-duration="600"
+   data-aos-delay="300">
+   <!-- <div class="loader-wrapper">
+      <div class="loader"><img alt="" src="./e2e80b0a55c5bbb2e2ba02aa05ab8de4.gif"
+            style="height: 60vh; width: 40vw; max-width: 300px; max-height: 300px;">
+         <div class="typewriter">LOADING</div>
+      </div>
+   </div> -->
+   </center>
+   <!-- <div id="loading"></div> -->
+   <div class="parallax-mirror"
+      style="visibility: visible; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 910.875px; width: 1905px;">
+      <img alt="" class="parallax-slider" src="./hero-bg.jpg"
+         style="transform: translate3d(0px, 0px, 0px); position: absolute; left: 0px; height: 1270px; width: 1905px; max-width: none; top: -193px;">
+   </div>
+   <div class="pace  pace-inactive">
+      <div class="pace-progress" data-progress-text="100%" data-progress="99"
+         style="transform: translate3d(100%, 0px, 0px);">
+         <div class="pace-progress-inner"></div>
+      </div>
+      <div class="pace-activity"></div>
+   </div>
+   <header class="s-header">
+      <div class="header-logo">
+         <h2 style="color:#FFFFFF;">IMPETUS</h2>
+      </div>
+      <nav class="header-nav">
+         <a class="header-nav__close" title="close"><span>Close</span></a>
+         <div class="header-nav__content">
+            <h3 style="font-size: 22px;">Navigation</h3>
+            <ul class="header-nav__list">
+               <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
+               <li><a class="smoothscroll" href="#services" title="about">About IMPETUS</a></li>
+               <li><a class="smoothscroll" href="#about" title="about">About Theme</a></li>
+               <li><a href="./events.html">Events </a></li>
+               <li><a class="smoothscroll" href="#clients" title="clients">Gallery</a></li>
+               <li><a class="smoothscroll" href="#contact" title="contact">Contact</a></li>
+            </ul>
+
+         </div>
+      </nav>
+      <a class="header-menu-toggle"> <span class="header-menu-text"></span> <span class="header-menu-icon"></span> </a>
+   </header>
+   <!-- <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="./5335769.jpg"
+      data-natural-width="3000" data-natural-height="2000" data-position-y="center">
+      <center>
          <div class="row home-content" style="display: flex;flex-wrap: wrap-reverse;">
-               <div class="col-six header ">
-                  <div class="home-content__main">
-                  
-               <h1> IMPETUS 2023</h1>
-               <h3><span class="green">green</span>shift:</h3>
-               <h4 style="color: #dddddd; font-size: 15px;"> Harnessing Sustainability, Fostering Initiatives </h4>
-               <div class="home-content__buttons">
-                <a href="https://unstop.com/festival/impetus-230-university-visvesvaraya-college-of-engineering-uvce-bangalore-117943" class="smooth btn btn--stroke">Register </a> 
-                  <a href="brochure1.pdf" class="btn btn--stroke"> Brochure</a> 
-                  <a href="IMPETUS 23.0 Schedule-2.pdf" class="btn btn--stroke"> Schedule</a> 
-                  <a href="https://unstop.com/p/all-in-pass-impetus-230-university-visvesvaraya-college-of-engineering-uvce-bangalore-643432?lb=G62PCFj" class="btn btn--stroke"> All in one pass</a> 
+            <div class="col-six header ">
+               <div class="home-content__main">
+
+                  <h1> IMPETUS 2023</h1>
+                  <h3><span class="green">green</span>shift:</h3>
+                  <h4 style="color: #dddddd; font-size: 15px;"> Harnessing Sustainability, Fostering Initiatives </h4>
+                  <div class="home-content__buttons">
+                     <a href="https://unstop.com/festival/impetus-230-university-visvesvaraya-college-of-engineering-uvce-bangalore-117943"
+                        class="smooth btn btn--stroke">Register </a>
+                     <a href="brochure1.pdf" class="btn btn--stroke"> Brochure</a>
+                     <a href="IMPETUS 23.0 Schedule-2.pdf" class="btn btn--stroke"> Schedule</a>
+                     <a href="https://unstop.com/p/all-in-pass-impetus-230-university-visvesvaraya-college-of-engineering-uvce-bangalore-643432?lb=G62PCFj"
+                        class="btn btn--stroke"> All in one pass</a>
                   </div>
-            </div>
+               </div>
             </div>
             <div class="col-six">
-               <div class="home-image" style="margin-top: 10%; padding:0px; " data-parallax="scroll"   data-natural-width="3000" data-natural-height="2000" data-position-y="center" >
+               <div class="home-image" style="margin-top: 10%; padding:0px; " data-parallax="scroll"
+                  data-natural-width="3000" data-natural-height="2000" data-position-y="center">
                   <img alt="" src="./light_handle.png" alt="" srcset="">
                </div>
             </div>
          </div>
-         </center>
-      </section>
-      
-      <section id="services" class="s-services" >
-         <div class="row section-header has-bottom-sep aos-init">
-            <div class="col-full">
-               <h3 class="subhead"></h3>
-               <h1 class="display-2" style="">About IMPETUS</h1>
-            </div>
-            <div class="row about-desc aos-init aos-animate">
-               <div class="col-full" style="color: #000000;">
-                  <p>IMPETUS awaits you with a technological spectacle, where creativity and innovation collide to shape the future of technology. IMPETUS 23.0, the Annual National Level Technical Extravaganza organized by IEEE UVCE with the theme "GREENSHIFT: Harnessing Sustainability, Fostering Initiatives" promises to challenge participants to think about sustainability in innovative ways and use technology to create a positive impact on the environment. With this theme, you'll have the opportunity to explore sustainable solutions to real-world challenges, while contributing to the larger goal of creating a more sustainable future.</p>
-               </div>
-            </div>
-         </div>
-         <div class="row services-list block-1-2 block-tab-full">
-            <div class="col-block service-item aos-init">
-               <div class="service-icon"> <i class="icon-paint-brush"></i></div>
-               <div class="service-text">
-                  <h3 class="h2">Flagship Events</h3>
-                  <p style=" color:black;text-align: justify;">IEEE UVCE hosts a variety of flagship events in IMPETUS every year, aimed at bringing together professionals, industries from different domains and backgrounds to network, learn, and share knowledge.
-Our flagship events are designed to provide attendees with valuable insights, practical skills, and industry updates. We offer a wide range of events to cater to different interests and needs, including conferences, workshops, webinars, and more. </p>
-               </div>
-            </div>
-            <div class="col-block service-item aos-init"></div>
-               <div class="service-icon"> <i class="icon-group"></i></div>
-               <div class="service-text">
-                  <h3 class="h2">General Events</h3>
-                  <p style=" color:black;text-align: justify;">IMPETUS is not just about our flagship events - we also welcome outside teams and individuals to organize events that align with our mission and values. These events are a great opportunity for the wider community to get involved with IMPETUS and showcase their skills and creativity.
-For IMPETUS 23.0, we have a wide range of exciting events planned that are sure to appeal to a diverse audience. Gear up and get involved - whether you're a developer, entrepreneur, tech enthusiastic, or just someone who loves to have fun, there's a place for you at IMPETUS 23.0!
-</p>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section id="about" class="s-about">
-         <div class="row section-header has-bottom-sep aos-init aos-animate" >
-            <div class="col-full">
-               <h3 class="subhead subhead--dark"></h3>
-               <h1 class="display-1 display-1--light" style="text-transform: uppercase;">About Theme</h1>
-            </div>
+      </center>
+   </section> -->
+
+   <div id="loader"></div>
+   <div id="soup-container">
+      <div id="segments">
+      </div>
+      <div id="soup-nav">
+         <span id="soup-prev"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i></span>
+         <span id="soup-next"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span>
+      </div>
+   </div>
+
+   <section id="services" class="s-services">
+      <div class="row section-header has-bottom-sep aos-init">
+         <div class="col-full">
+            <h3 class="subhead"></h3>
+            <h1 class="display-2" style="">About IMPETUS</h1>
          </div>
          <div class="row about-desc aos-init aos-animate">
-            <div class="col-full">
-               <p> "GREENSHIFT: Harnessing Sustainability, Fostering Initiatives."
-The theme represents a fundamental shift in the way we approach technology and innovation. Traditionally, technological progress has been focused on improving efficiency, productivity, and profitability, often at the expense of environmental sustainability. However, with the growing awareness of the negative impacts of unsustainable practices, there is a need to shift towards a more sustainable approach to technology and innovation.
-</p>
-<br>
-<p>The theme encourages participants to think beyond the conventional boundaries of technology and explore innovative solutions that not only deliver economic benefits but also have a positive impact on the environment. It highlights the importance of harnessing sustainability by promoting sustainable practices in all areas of technology and fostering initiatives that support a more sustainable future.</p>
+            <div class="col-full" style="color: #000000;">
+               <p>IMPETUS awaits you with a technological spectacle, where creativity and innovation collide to shape
+                  the future of technology. IMPETUS 23.0, the Annual National Level Technical Extravaganza organized by
+                  IEEE UVCE with the theme "GREENSHIFT: Harnessing Sustainability, Fostering Initiatives" promises to
+                  challenge participants to think about sustainability in innovative ways and use technology to create a
+                  positive impact on the environment. With this theme, you'll have the opportunity to explore
+                  sustainable solutions to real-world challenges, while contributing to the larger goal of creating a
+                  more sustainable future.</p>
             </div>
          </div>
-         <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full aos-init aos-animate" "fade-up">
-            <div class="col-block stats__col">
-               <div class="stats__count">1505</div>
-               <h5>No. of participants</h5>
-            </div>
-            <div class="col-block stats__col">
-               <div class="stats__count">21</div>
-               <h5>No. of events</h5>
-            </div>
-            <div class="col-block stats__col">
-               <div class="stats__count">102</div>
-               <h5>No. of prizes</h5>
-            </div>
-            <div class="col-block stats__col ">
-               <div class="stats__count">6000</div>
-               <h5>Cash Prizes upto </h5>
+      </div>
+      <div class="row services-list block-1-2 block-tab-full">
+         <div class="col-block service-item aos-init">
+            <div class="service-icon"> <i class="icon-paint-brush"></i></div>
+            <div class="service-text">
+               <h3 class="h2">Flagship Events</h3>
+               <p style=" color:black;text-align: justify;">IEEE UVCE hosts a variety of flagship events in IMPETUS
+                  every year, aimed at bringing together professionals, industries from different domains and
+                  backgrounds to network, learn, and share knowledge.
+                  Our flagship events are designed to provide attendees with valuable insights, practical skills, and
+                  industry updates. We offer a wide range of events to cater to different interests and needs, including
+                  conferences, workshops, webinars, and more. </p>
             </div>
          </div>
-         <div class="about__line"></div>
-      </section>
-      <section id="works" class="s-works">
-         <div class="intro-wrap">
-            <div class="row section-header-events has-bottom-sep light-sep" >
-               <div class="col-full">
-                  <h3 class="subhead"></h3>
-                  <h1 class="display-2 ">Events</h1>
-               </div>
-               <div class="col-full" style="color: #FFFFFF; text-align: justify;">
-                  <p>The events of IMPETUS 23.0 aim to provide participants with an opportunity to improve their skills while also showcasing their creativity and talent. Alongside technical events, there are also events such as Laser Tag, BGMI, and Valorant that allow participants to enjoy. The events are designed in such a way that students from all branches can participate based on their strengths, creating a unique hybrid blend. Flagship events focus on the technical development of students from all aspects. These events challenge participants to solve real-world problems using the latest technology, encouraging innovative thinking and problem-solving skills.</p>
-               </div>
-               <a href="events.html" class="btn btn--stroke events-button">Show All Events </a>
-            </div>
+         <div class="col-block service-item aos-init"></div>
+         <div class="service-icon"> <i class="icon-group"></i></div>
+         <div class="service-text">
+            <h3 class="h2">General Events</h3>
+            <p style=" color:black;text-align: justify;">IMPETUS is not just about our flagship events - we also welcome
+               outside teams and individuals to organize events that align with our mission and values. These events are
+               a great opportunity for the wider community to get involved with IMPETUS and showcase their skills and
+               creativity.
+               For IMPETUS 23.0, we have a wide range of exciting events planned that are sure to appeal to a diverse
+               audience. Gear up and get involved - whether you're a developer, entrepreneur, tech enthusiastic, or just
+               someone who loves to have fun, there's a place for you at IMPETUS 23.0!
+            </p>
          </div>
-      </section>
-      <section id="clients" class="s-clients">
-         <div class="row section-header aos-init">
+      </div>
+      </div>
+   </section>
+   <section id="about" class="s-about">
+      <div class="row section-header has-bottom-sep aos-init aos-animate">
+         <div class="col-full">
+            <h3 class="subhead subhead--dark"></h3>
+            <h1 class="display-1 display-1--light" style="text-transform: uppercase;">About Theme</h1>
+         </div>
+      </div>
+      <div class="row about-desc aos-init aos-animate">
+         <div class="col-full">
+            <p> "GREENSHIFT: Harnessing Sustainability, Fostering Initiatives."
+               The theme represents a fundamental shift in the way we approach technology and innovation. Traditionally,
+               technological progress has been focused on improving efficiency, productivity, and profitability, often
+               at the expense of environmental sustainability. However, with the growing awareness of the negative
+               impacts of unsustainable practices, there is a need to shift towards a more sustainable approach to
+               technology and innovation.
+            </p>
+            <br>
+            <p>The theme encourages participants to think beyond the conventional boundaries of technology and explore
+               innovative solutions that not only deliver economic benefits but also have a positive impact on the
+               environment. It highlights the importance of harnessing sustainability by promoting sustainable practices
+               in all areas of technology and fostering initiatives that support a more sustainable future.</p>
+         </div>
+      </div>
+      <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full aos-init aos-animate" "fade-up">
+         <div class="col-block stats__col">
+            <div class="stats__count">1505</div>
+            <h5>No. of participants</h5>
+         </div>
+         <div class="col-block stats__col">
+            <div class="stats__count">21</div>
+            <h5>No. of events</h5>
+         </div>
+         <div class="col-block stats__col">
+            <div class="stats__count">102</div>
+            <h5>No. of prizes</h5>
+         </div>
+         <div class="col-block stats__col ">
+            <div class="stats__count">6000</div>
+            <h5>Cash Prizes upto </h5>
+         </div>
+      </div>
+      <div class="about__line"></div>
+   </section>
+   <section id="works" class="s-works">
+      <div class="intro-wrap">
+         <div class="row section-header-events has-bottom-sep light-sep">
             <div class="col-full">
                <h3 class="subhead"></h3>
-               <h1 class="display-2">Gallery</h1>
+               <h1 class="display-2 ">Events</h1>
             </div>
+            <div class="col-full" style="color: #FFFFFF; text-align: justify;">
+               <p>The events of IMPETUS 23.0 aim to provide participants with an opportunity to improve their skills
+                  while also showcasing their creativity and talent. Alongside technical events, there are also events
+                  such as Laser Tag, BGMI, and Valorant that allow participants to enjoy. The events are designed in
+                  such a way that students from all branches can participate based on their strengths, creating a unique
+                  hybrid blend. Flagship events focus on the technical development of students from all aspects. These
+                  events challenge participants to solve real-world problems using the latest technology, encouraging
+                  innovative thinking and problem-solving skills.</p>
+            </div>
+            <a href="events.html" class="btn btn--stroke events-button">Show All Events </a>
          </div>
-          <!-- <div class="row clients-outer aos-init" "fade-up">
+      </div>
+   </section>
+   <section id="clients" class="s-clients">
+      <div class="row section-header aos-init">
+         <div class="col-full">
+            <h3 class="subhead"></h3>
+            <h1 class="display-2">Gallery</h1>
+         </div>
+      </div>
+      <!-- <div class="row clients-outer aos-init" "fade-up">
             <div class="col-full">
                <div class="clients slick-initialized slick-slider slick-dotted" role="toolbar">
                   <div aria-live="polite" class="slick-list draggable">
@@ -185,373 +563,398 @@ The theme represents a fundamental shift in the way we approach technology and i
                </div> 
             </div>
          </div> -->
-         <div class="container">
-  <img alt="" src="image1.webp" style="width:500px; height: 300px;">
-  <img alt="" src="image2.webp" style="width:500px; height:300px;">
-  <img alt="" src="image3.webp" style="width:500px; height:300px;" >
-  <img alt="" src="image4.webp" style="width:500px; height:300px;" >
-  <img alt="" src="image5.webp"style="width:500px; height:300px;" >
-  <img alt="" src="image6.webp"style="width:500px; height:300px;" >
- 
-</div>
+      <div class="container">
+         <img alt="" src="image1.webp" style="width:500px; height: 300px;">
+         <img alt="" src="image2.webp" style="width:500px; height:300px;">
+         <img alt="" src="image3.webp" style="width:500px; height:300px;">
+         <img alt="" src="image4.webp" style="width:500px; height:300px;">
+         <img alt="" src="image5.webp" style="width:500px; height:300px;">
+         <img alt="" src="image6.webp" style="width:500px; height:300px;">
+
+      </div>
 
 
 
-      </section>
-      <section id="about" class="s-about">
-         <div class="row section-header has-bottom-sep aos-init aos-animate" >
-            <div class="col-full">
-               <h3 class="subhead subhead--dark"></h3>
-               <h1 class="display-1 display-1--light" style="text-transform: uppercase;">Sponsors</h1>
+   </section>
+   <section id="about" class="s-about">
+      <div class="row section-header has-bottom-sep aos-init aos-animate">
+         <div class="col-full">
+            <h3 class="subhead subhead--dark"></h3>
+            <h1 class="display-1 display-1--light" style="text-transform: uppercase;">Sponsors</h1>
+         </div>
+      </div>
+      <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full aos-init aos-animate" "fade-up">
+         <div class="col-block stats__col1">
+            <div class="spr-card">
+
+               <div class="slide slide1">
+
+                  <div class="content">
+
+                     <div class="icon">
+                        <img alt="" src="./kptcl-logo-21EFDB3785-seeklogo.com.png" style="width:200px; height: 200px;">
+
+                     </div>
+
+                  </div>
+
+               </div>
+
+               <div class="slide slide2" style="background-color: rgb(255, 123, 0);">
+
+                  <div class="content">
+
+                     <h3>
+
+                        KPTCL
+
+                     </h3>
+
+                     <p>Platinum Sponsors</p>
+
+                  </div>
+
+               </div>
+
             </div>
          </div>
-         <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full aos-init aos-animate" "fade-up">
-            <div class="col-block stats__col1">
-               <div class="spr-card">
+         <div class="col-block stats__col1">
+            <div class="spr-card">
 
-<div class="slide slide1">
+               <div class="slide slide1">
 
-    <div class="content">
+                  <div class="content">
 
-        <div class="icon">
-         <img alt="" src="./kptcl-logo-21EFDB3785-seeklogo.com.png" style="width:200px; height: 200px;">
+                     <div class="icon">
+                        <img alt="" src="./Namma_metro.png" style="width:350px; height: 200px;">
 
-        </div>
+                     </div>
 
-    </div>
+                  </div>
 
-</div>
+               </div>
 
-<div class="slide slide2" style="background-color: rgb(255, 123, 0);">
+               <div class="slide slide2" style="background-color: gold;">
 
-    <div class="content">
+                  <div class="content">
 
-        <h3>
-
-            KPTCL
-
-        </h3>
-
-        <p>Platinum Sponsors</p>
-
-    </div>
-
-</div>
-
-</div>
-            </div>
-            <div class="col-block stats__col1">
-                    <div class="spr-card">
-
-            <div class="slide slide1">
-
-                <div class="content">
-
-                    <div class="icon">
-                     <img alt="" src="./Namma_metro.png" style="width:350px; height: 200px;">
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="slide slide2" style="background-color: gold;">
-
-                <div class="content">
-
-                    <h3>
+                     <h3>
 
                         Namma metro
 
-                    </h3>
+                     </h3>
 
-                    <p>Gold Sponsors</p>
+                     <p>Gold Sponsors</p>
 
-                </div>
-
-            </div>
-
-        </div>
-
-            </div>
-            <div class="col-block stats__col1">
-               <div class="spr-card">
-
-       <div class="slide slide1">
-
-           <div class="content">
-
-               <div class="icon">
-                <img alt="" src="./harman-removebg-preview.webp" style="width:350px; height: 200px;">
+                  </div>
 
                </div>
 
-           </div>
-
-       </div>
-
-       <div class="slide slide2" style="background-color: gold;">
-
-           <div class="content">
-
-               <h3>
-
-                   Harman automative
-
-               </h3>
-
-               <p>Gold Sponsors</p>
-
-           </div>
-
-       </div>
-
-   </div>
-
-       </div>
-            
-            <div class="col-block stats__col1">
-               <div class="spr-card">
-
-<div class="slide slide1" >
-
-    <div class="content">
-
-        <div class="icon">
-         <img alt="" src="./vtpc.png" style="width:350px; height: 200px;">
-
-        </div>
-
-    </div>
-
-</div>
-
-<div class="slide slide2"style="background-color: silver">
-
-    <div class="content">
-
-        <h3>
-
-            VTPC 
-
-        </h3>
-
-        <p>Silver Sponsors</p>
-
-    </div>
-
-</div>
-
-</div>
             </div>
-            <div class="col-block stats__col1">
-               <div class="spr-card">
 
-<div class="slide slide1" >
+         </div>
+         <div class="col-block stats__col1">
+            <div class="spr-card">
 
-    <div class="content">
+               <div class="slide slide1">
 
-        <div class="icon">
-         <img alt="" src="./cs-color.png" style="width:350px; height: 200px;">
+                  <div class="content">
 
-        </div>
+                     <div class="icon">
+                        <img alt="" src="./harman-removebg-preview.webp" style="width:350px; height: 200px;">
 
-    </div>
+                     </div>
 
-</div>
+                  </div>
 
-<div class="slide slide2"style="background-color: silver">
+               </div>
 
-    <div class="content">
+               <div class="slide slide2" style="background-color: gold;">
 
-        <h3>
+                  <div class="content">
 
-            IEEE Computer Society
-            <br> Bangalore Society</br>
+                     <h3>
 
-        </h3>
+                        Harman automative
 
-        <p>Silver Sponsors</p>
+                     </h3>
 
-    </div>
+                     <p>Gold Sponsors</p>
 
-</div>
+                  </div>
 
-</div>
+               </div>
+
             </div>
-          
-            
-            
-            <!-- <div class="col-block stats__col1">
+
+         </div>
+
+         <div class="col-block stats__col1">
+            <div class="spr-card">
+
+               <div class="slide slide1">
+
+                  <div class="content">
+
+                     <div class="icon">
+                        <img alt="" src="./vtpc.png" style="width:350px; height: 200px;">
+
+                     </div>
+
+                  </div>
+
+               </div>
+
+               <div class="slide slide2" style="background-color: silver">
+
+                  <div class="content">
+
+                     <h3>
+
+                        VTPC
+
+                     </h3>
+
+                     <p>Silver Sponsors</p>
+
+                  </div>
+
+               </div>
+
+            </div>
+         </div>
+         <div class="col-block stats__col1">
+            <div class="spr-card">
+
+               <div class="slide slide1">
+
+                  <div class="content">
+
+                     <div class="icon">
+                        <img alt="" src="./cs-color.png" style="width:350px; height: 200px;">
+
+                     </div>
+
+                  </div>
+
+               </div>
+
+               <div class="slide slide2" style="background-color: silver">
+
+                  <div class="content">
+
+                     <h3>
+
+                        IEEE Computer Society
+                        <br> Bangalore Society</br>
+
+                     </h3>
+
+                     <p>Silver Sponsors</p>
+
+                  </div>
+
+               </div>
+
+            </div>
+         </div>
+
+
+
+         <!-- <div class="col-block stats__col1">
                <img alt="" src="./harman-removebg-preview.webp" style="width:500px; height: 300p">
 
             </div> -->
-         </div>
-         <div class="about__line"></div>
-      </section>
-      <section id="contact" class="s-contact">
-         <div class="row section-header aos-init" "fade-up">
-            <div class="col-full">
+      </div>
+      <div class="about__line"></div>
+   </section>
+   <section id="contact" class="s-contact">
+      <div class="row section-header aos-init" "fade-up">
+         <div class="col-full">
 
-               <h1 class="display-2" style="color: #FFFFFF;">Contact Us</h1>
-            </div>
+            <h1 class="display-2" style="color: #FFFFFF;">Contact Us</h1>
          </div>
-         <div class="row contact-content aos-init" "fade-up">
-            <div class="contact-primary">
-               <h3 class="h6 hide-on-fullwidth">Location</h3>
-               <div class="cinfo">
-                  <div class="phone" style="color: #5f687b;">
-                    <div>
-                    <!-- <p>KR Circle, Bengaluru-560001</p> -->
-                    </div>
+      </div>
+      <div class="row contact-content aos-init" "fade-up">
+         <div class="contact-primary">
+            <h3 class="h6 hide-on-fullwidth">Location</h3>
+            <div class="cinfo">
+               <div class="phone" style="color: #5f687b;">
+                  <div>
+                     <!-- <p>KR Circle, Bengaluru-560001</p> -->
                   </div>
                </div>
-               <div style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=UVCE+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe></div>
             </div>
-            <div class="contact-secondary">
-               <div class="contact-info">
-                  <h3 class="h6 hide-on-fullwidth" >Contact Info</h3>
-                   <a href="tel:+91 97419 36008">
+            <div style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0"
+                  marginwidth="0"
+                  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=UVCE+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                     href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe>
+            </div>
+         </div>
+         <div class="contact-secondary">
+            <div class="contact-info">
+               <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+               <a href="tel:+91 97419 36008">
                   <div class="cinfo">
                      <div class="name1">
-                        <h2>Mohith Varma V S</h2>                        
+                        <h2>Mohith Varma V S</h2>
                         <p>+91 9741936008</p>
                      </div>
                   </div>
-                  </a>
-                   <a href="tel:+91 9611371838">
+               </a>
+               <a href="tel:+91 9611371838">
                   <div class="cinfo">
                      <div class="name1">
-                        <h2> Kavya Bhat</h2>                        
+                        <h2> Kavya Bhat</h2>
                         <p>+91 9611371838</p>
                      </div>
                   </div>
-                  </a>
-                   <a href="tel:+91 9448525174">
+               </a>
+               <a href="tel:+91 9448525174">
                   <div class="cinfo">
                      <div class="name1">
                         <h2>Kruthin N</h2>
-                           <p>+91 9448525174</p>
+                        <p>+91 9448525174</p>
                      </div>
                   </div>
-                  </a>
-                   <a href="tel:+91 7666238914">
+               </a>
+               <a href="tel:+91 7666238914">
                   <div class="cinfo">
                      <div class="name1">
-                        <h2>Nilkant Gunjote</h2>                        
+                        <h2>Nilkant Gunjote</h2>
                         <p>+91 7666238914</p>
                      </div>
                   </div>
-                  </a>
-         
-                  <ul class="contact-social">
-                     <li> <a href="https://www.facebook.com/impetusuvce?mibextid=ZbWKwL" ><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                     <li> <a href="https://twitter.com/ieeeuvce?s=11&t=n0JjQSMSuZttDTvAR9hRuw"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                     <li> <a href="https://instagram.com/impetusuvce?igshid=ZDdkNTZiNTM=" ><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                     <li> <a href="ttps://www.linkedin.com/in/ieee-uvce-66563332" ><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                     <li> <a href="https://www.youtube.com/@ieeeuvce3890"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+               </a>
 
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </section>
-      <footer>
-         <div class="row footer-main">
-            <div class="col-four tab-full left footer-desc">
-               <h2>IEEE UVCE</h2>
-               <div class="ieeeuvce">
-              <p> The IEEE Student Branch of UVCE has been interminably striving to hoist the student community and empower its members to enhance their learning experience. The organization's commitment to enhancing and upgrading the core knowledge base of the students to the industry standards is reflected in the host of social, cultural and technical activities organized by it throughout the year.</p>
-            </div>
-         </div>
-            <div class="col-four tab-full right footer-subscribe">
-               <div class="footer-logo">
-                  <img alt="" src="./ieee-white.png" alt="" srcset="">
-               </div>
-            </div>
-            <div class="col-four footer-links">
-               <h3>USEFUL LINKS</h3>
-               <div class="linkuu">
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#services">About IMPETUS</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#about">Events</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#contact">Gallery</a></li>
-            </ul>
-         </div>
-            </div>
-         </div>
-         <div class="row footer-bottom">
-            <div class="col-twelve">
-               <div class="copyright"><p>© 2023 Copyright: <span>IEEE UVCE</span></p></div>
-               <!-- <div class="go-top" style="display: none;"> <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a></div> -->
-            </div>
-         </div>
-      </footer>
-      <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-         <div class="pswp__bg"></div>
-         <div class="pswp__scroll-wrap">
-            <div class="pswp__container">
-               <div class="pswp__item"></div>
-               <div class="pswp__item"></div>
-               <div class="pswp__item"></div>
-            </div>
-            <div class="pswp__ui pswp__ui--hidden">
-               <div class="pswp__top-bar">
-                  <div class="pswp__counter"></div>
-                  <button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title="Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                  <div class="pswp__preloader">
-                     <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                           <div class="pswp__preloader__donut"></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                  <div class="pswp__share-tooltip"></div>
-               </div>
-               <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-               <div class="pswp__caption">
-                  <div class="pswp__caption__center"></div>
-               </div>
+               <ul class="contact-social">
+                  <li> <a href="https://www.facebook.com/impetusuvce?mibextid=ZbWKwL"><i class="fa fa-facebook"
+                           aria-hidden="true"></i></a></li>
+                  <li> <a href="https://twitter.com/ieeeuvce?s=11&t=n0JjQSMSuZttDTvAR9hRuw"><i class="fa fa-twitter"
+                           aria-hidden="true"></i></a></li>
+                  <li> <a href="https://instagram.com/impetusuvce?igshid=ZDdkNTZiNTM="><i class="fa fa-instagram"
+                           aria-hidden="true"></i></a></li>
+                  <li> <a href="ttps://www.linkedin.com/in/ieee-uvce-66563332"><i class="fa fa-linkedin"
+                           aria-hidden="true"></i></a></li>
+                  <li> <a href="https://www.youtube.com/@ieeeuvce3890"><i class="fa fa-youtube"
+                           aria-hidden="true"></i></a></li>
+
+               </ul>
             </div>
          </div>
       </div>
-      <div id="preloader" style="display: none;">
-         <div id="loader" style="display: none;">
-            <div class="line-scale-pulse-out">
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
+   </section>
+   <footer>
+      <div class="row footer-main">
+         <div class="col-four tab-full left footer-desc">
+            <h2>IEEE UVCE</h2>
+            <div class="ieeeuvce">
+               <p> The IEEE Student Branch of UVCE has been interminably striving to hoist the student community and
+                  empower its members to enhance their learning experience. The organization's commitment to enhancing
+                  and upgrading the core knowledge base of the students to the industry standards is reflected in the
+                  host of social, cultural and technical activities organized by it throughout the year.</p>
+            </div>
+         </div>
+         <div class="col-four tab-full right footer-subscribe">
+            <div class="footer-logo">
+               <img alt="" src="./ieee-white.png" alt="" srcset="">
+            </div>
+         </div>
+         <div class="col-four footer-links">
+            <h3>USEFUL LINKS</h3>
+            <div class="linkuu">
+               <ul>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#services">About IMPETUS</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#about">Events</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#contact">Gallery</a></li>
+               </ul>
             </div>
          </div>
       </div>
-      <div id="rootReactVNB" class="rootReactVNB">
-         <div style="display: none; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 2000000000; background: red; opacity: 0;"></div>
-         <div class="ModalOverlay-sc-rn9ey7 dIuWHJ">
-            <div width="360px" class="ModalContent-sc-1byo0d8 kZcOAB">
-               <div class="ModalHeader-sc-1q7dtzz bJwUBx">
-                  <h5 class="ModalHeading-sc-rwjzr7 fOGVrh">
-                     <div class="LogoWrapper-sc-ssd9p0 indTSF StyledLogo-sc-wamwi6 fOCdIe">
-                        <div class="Image-sc-mngam5 fmghtm"></div>
+      <div class="row footer-bottom">
+         <div class="col-twelve">
+            <div class="copyright">
+               <p>© 2023 Copyright: <span>IEEE UVCE</span></p>
+            </div>
+            <!-- <div class="go-top" style="display: none;"> <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a></div> -->
+         </div>
+      </div>
+   </footer>
+   <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+         <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+         </div>
+         <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+               <div class="pswp__counter"></div>
+               <button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button
+                  class="pswp__button pswp__button--share" title="Share"></button> <button
+                  class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button
+                  class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+               <div class="pswp__preloader">
+                  <div class="pswp__preloader__icn">
+                     <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
                      </div>
-                     We need your help:
-                  </h5>
-                  <div class="CloseButton-sc-eod3hf jgEzBl">
-                     <div class="IconImage-sc-1oekuv0 idcWUa" color="grey100" width="24px" height="24px"></div>
                   </div>
                </div>
-               <div class="ModalBody-sc-mej6ip eWgdsE">Video Notebook needs access to your Google Drive to link your notes on Google Meet to recordings stored on Google Drive</div>
-               <div class="ModalFooter-sc-1cykhbu cximxh"><button type="primary" width="auto" height="40px" loading="false" class="ButtonContainer-sc-1eabuu8 blwkrT">Authorize</button><button type="secondary" width="auto" height="40px" loading="false" class="ButtonContainer-sc-1eabuu8 kgtBlH">Not now...</button><button type="secondary" width="auto" height="40px" loading="false" class="ButtonContainer-sc-1eabuu8 kgtBlH">Don't ask me anymore</button></div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+               <div class="pswp__share-tooltip"></div>
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button
+               class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+            <div class="pswp__caption">
+               <div class="pswp__caption__center"></div>
             </div>
          </div>
-         <link rel="stylesheet" type="text/css" href="chrome-extension://hbklahkfbghjgbclbfcnhpfmajkagnci/css/fonts.css">
-         <style>
-            #dialogContainer {
+      </div>
+   </div>
+   <div id="preloader" style="display: none;">
+      <div id="loader" style="display: none;">
+         <div class="line-scale-pulse-out">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+         </div>
+      </div>
+   </div>
+   <div id="rootReactVNB" class="rootReactVNB">
+      <div
+         style="display: none; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 2000000000; background: red; opacity: 0;">
+      </div>
+      <div class="ModalOverlay-sc-rn9ey7 dIuWHJ">
+         <div width="360px" class="ModalContent-sc-1byo0d8 kZcOAB">
+            <div class="ModalHeader-sc-1q7dtzz bJwUBx">
+               <h5 class="ModalHeading-sc-rwjzr7 fOGVrh">
+                  <div class="LogoWrapper-sc-ssd9p0 indTSF StyledLogo-sc-wamwi6 fOCdIe">
+                     <div class="Image-sc-mngam5 fmghtm"></div>
+                  </div>
+                  We need your help:
+               </h5>
+               <div class="CloseButton-sc-eod3hf jgEzBl">
+                  <div class="IconImage-sc-1oekuv0 idcWUa" color="grey100" width="24px" height="24px"></div>
+               </div>
+            </div>
+            <div class="ModalBody-sc-mej6ip eWgdsE">Video Notebook needs access to your Google Drive to link your notes
+               on Google Meet to recordings stored on Google Drive</div>
+            <div class="ModalFooter-sc-1cykhbu cximxh"><button type="primary" width="auto" height="40px" loading="false"
+                  class="ButtonContainer-sc-1eabuu8 blwkrT">Authorize</button><button type="secondary" width="auto"
+                  height="40px" loading="false" class="ButtonContainer-sc-1eabuu8 kgtBlH">Not now...</button><button
+                  type="secondary" width="auto" height="40px" loading="false"
+                  class="ButtonContainer-sc-1eabuu8 kgtBlH">Don't ask me anymore</button></div>
+         </div>
+      </div>
+      <link rel="stylesheet" type="text/css" href="chrome-extension://hbklahkfbghjgbclbfcnhpfmajkagnci/css/fonts.css">
+      <style>
+         #dialogContainer {
             flex-grow: 1 !important;
             position: fixed !important;
             background: rgba(255, 255, 255, 1) !important;
@@ -560,158 +963,310 @@ The theme represents a fundamental shift in the way we approach technology and i
             display: flex;
             flex-direction: column !important;
             box-shadow: 0 0 5px rgba(35, 35, 35, 0.5) !important;
-            }
-            #dialogContainer:not(.dialogMinimized) {
+         }
+
+         #dialogContainer:not(.dialogMinimized) {
             min-width: 295px !important;
-            }
-            .VN--hide {
-            display:none !important;
-            }
-            .VN--show {
+         }
+
+         .VN--hide {
+            display: none !important;
+         }
+
+         .VN--show {
             display: flex !important;
-            }
-            #dialogContainer:not(.dialogMinimized) {
+         }
+
+         #dialogContainer:not(.dialogMinimized) {
             background: rgba(255, 255, 255, 0.5);
             border: 1px solid rgba(255, 255, 255, 0) !important;
             transition-property: background, border;
             transition-duration: 0.2s;
-            }
-            #dialogContainer:not(.dialogMinimized):hover,
-            #dialogContainer:not(.dialogMinimized)[is-active="true"] {
+         }
+
+         #dialogContainer:not(.dialogMinimized):hover,
+         #dialogContainer:not(.dialogMinimized)[is-active="true"] {
             background: rgba(255, 255, 255, 1);
             border: 1px solid rgba(255, 255, 255, 1) !important;
-            }
-            #dialogContainer:not(.dialogMinimized) > div > div:not([class^="AddonHeader__HeaderDivStyle"]) {
+         }
+
+         #dialogContainer:not(.dialogMinimized)>div>div:not([class^="AddonHeader__HeaderDivStyle"]) {
             opacity: 0.5;
             transition: opacity 0.2s;
-            }
-            #dialogContainer:not(.dialogMinimized):hover > div > div,
-            #dialogContainer:not(.dialogMinimized)[is-active="true"] > div > div {
+         }
+
+         #dialogContainer:not(.dialogMinimized):hover>div>div,
+         #dialogContainer:not(.dialogMinimized)[is-active="true"]>div>div {
             opacity: 1;
-            }
-            #dialogContainer:not(.dialogMinimized) div[class^="ButtonsWrapper"] {
+         }
+
+         #dialogContainer:not(.dialogMinimized) div[class^="ButtonsWrapper"] {
             background-color: transparent;
             transition-property: background-color;
             transition-duration: 0.2s;
-            }
-            #dialogContainer:not(.dialogMinimized):hover div[class^="ButtonsWrapper"],
-            #dialogContainer:not(.dialogMinimized)[is-active="true"] div[class^="ButtonsWrapper"] {
+         }
+
+         #dialogContainer:not(.dialogMinimized):hover div[class^="ButtonsWrapper"],
+         #dialogContainer:not(.dialogMinimized)[is-active="true"] div[class^="ButtonsWrapper"] {
             background-color: #dddddd;
-            }
-            #dialogContainer:not(.dialogMinimized) div[class^="AddonFooter__DivStyled"] {
+         }
+
+         #dialogContainer:not(.dialogMinimized) div[class^="AddonFooter__DivStyled"] {
             opacity: 0.5;
             background-color: transparent;
             transition-property: background-color, opacity;
             transition-duration: 0.2s;
-            }
-            #dialogContainer:not(.dialogMinimized):hover div[class^="AddonFooter__DivStyled"],
-            #dialogContainer:not(.dialogMinimized)[is-active="true"] div[class^="AddonFooter__DivStyled"] {
+         }
+
+         #dialogContainer:not(.dialogMinimized):hover div[class^="AddonFooter__DivStyled"],
+         #dialogContainer:not(.dialogMinimized)[is-active="true"] div[class^="AddonFooter__DivStyled"] {
             background-color: #dddddd;
             opacity: 1;
-            }
-            #dialogContainer:not(.dialogMinimized) span[class^="ControlContainer"] {
+         }
+
+         #dialogContainer:not(.dialogMinimized) span[class^="ControlContainer"] {
             border-color: transparent;
             transition: border-color 0.2s;
-            }
-            #dialogContainer:not(.dialogMinimized):hover span[class^="ControlContainer"],
-            #dialogContainer:not(.dialogMinimized)[is-active="true"] span[class^="ControlContainer"] {
+         }
+
+         #dialogContainer:not(.dialogMinimized):hover span[class^="ControlContainer"],
+         #dialogContainer:not(.dialogMinimized)[is-active="true"] span[class^="ControlContainer"] {
             border-color: #dddddd;
-            }
-            #dialogContainer:not(.dialogMinimized) div[class*="SeparatorStyledDiv"] {
+         }
+
+         #dialogContainer:not(.dialogMinimized) div[class*="SeparatorStyledDiv"] {
             border-color: transparent;
             transition: border-color 0.2s;
-            }
-            #dialogContainer:not(.dialogMinimized):hover div[class*="SeparatorStyledDiv"],
-            #dialogContainer:not(.dialogMinimized)[is-active="true"] div[class*="SeparatorStyledDiv"] {
+         }
+
+         #dialogContainer:not(.dialogMinimized):hover div[class*="SeparatorStyledDiv"],
+         #dialogContainer:not(.dialogMinimized)[is-active="true"] div[class*="SeparatorStyledDiv"] {
             border-color: #bbbbbb;
-            }
-            #dialogContainer .ProseMirror strong {
+         }
+
+         #dialogContainer .ProseMirror strong {
             font-family: 'Roboto-bold', sans-serif;
-            }
-            #dialogContainer.positionRightTop{
+         }
+
+         #dialogContainer.positionRightTop {
             top: 10px;
             right: 10px;
             max-height: 600px;
             min-height: fit-content;
-            }
-            #dialogContainer.positionRightTop.gmeet{
+         }
+
+         #dialogContainer.positionRightTop.gmeet {
             top: 50px !important;
-            }
-            #dialogContainer.positionLeftTop{
+         }
+
+         #dialogContainer.positionLeftTop {
             top: 10px;
             left: 10px;
             max-height: 600px;
             min-height: fit-content;
-            }
-            #dialogContainer.dialogMinimized{
+         }
+
+         #dialogContainer.dialogMinimized {
             max-width: 114px;
-            }
-            #dialogContainer.positionRightBottom{
+         }
+
+         #dialogContainer.positionRightBottom {
             right: 10px;
             bottom: 10px;
             max-height: 400px;
             min-height: 63px;
-            }
-            #dialogContainer.positionLeftBottom{
+         }
+
+         #dialogContainer.positionLeftBottom {
             left: 10px;
             bottom: 10px;
             max-height: 400px;
             min-height: 63px;
-            }
-            .overflow{
+         }
+
+         .overflow {
             height: 270px;
             overflow-y: auto !important;
-            }
-            .VN--hide {
-            display:none!important;
-            visibility: hidden;
-            }
-            .VN--show {
-            display: flex;
-            }
-         </style>
-         <div id="dialogContainer" class="VN--hide positionRightTop dialogMinimized react-draggable" style="transform: translate(0px, 0px);">
-            <div id="workAroundDiv" class="WorkAroundDivStyled-sc-hfr1pv befcyA"></div>
-         </div>
-      </div>
-      <link rel="stylesheet" href="chrome-extension://hbklahkfbghjgbclbfcnhpfmajkagnci/css/iframe.css" id="videoNoteFrameStyle">
-      <script>
-         VANTA.GLOBE({
-           el: "#",
-           mouseControls: true,
-           touchControls: true,
-           gyroControls: false,
-           minHeight: 200.00,
-           minWidth: 200.00,
-           scale: 1.00,
-           scaleMobile: 1.00,
-           color: 0x3fff4a,
-           size: 1.60
-         })
-         </script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-         <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-         <script>
-         var setVanta = ()=>{
-         if (window.VANTA) window.VANTA.NET({
-           el: ".s-page-1 .s-section-1 .s-section",
-           mouseControls: true,
-           touchControls: true,
-           gyroControls: false,
-           minHeight: 200.00,
-           minWidth: 200.00,
-           scale: 1.00,
-           scaleMobile: 1.00,
-           color: 0x#39b54a,
-           backgroundColor: 0x#000000,
-           points: 13.00
-         })
          }
-         _strk.push(function() {
-           setVanta()
-           window.edit_page.Event.subscribe( "Page.beforeNewOneFadeIn", setVanta )
-         })
-         </script>
-      <script src="./jquery-3.6.1.min.js"></script> <script src="./plugins.js"></script> <script src="./main.js"></script> <script defer="" src="./vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon="{&quot;rayId&quot;:&quot;7920c2e19a44a135&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;,&quot;version&quot;:&quot;2022.11.3&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
-   </body>
+
+         .VN--hide {
+            display: none !important;
+            visibility: hidden;
+         }
+
+         .VN--show {
+            display: flex;
+         }
+      </style>
+      <div id="dialogContainer" class="VN--hide positionRightTop dialogMinimized react-draggable"
+         style="transform: translate(0px, 0px);">
+         <div id="workAroundDiv" class="WorkAroundDivStyled-sc-hfr1pv befcyA"></div>
+      </div>
+   </div>
+   <link rel="stylesheet" href="chrome-extension://hbklahkfbghjgbclbfcnhpfmajkagnci/css/iframe.css"
+      id="videoNoteFrameStyle">
+   <script>
+      VANTA.GLOBE({
+         el: "#",
+         mouseControls: true,
+         touchControls: true,
+         gyroControls: false,
+         minHeight: 200.00,
+         minWidth: 200.00,
+         scale: 1.00,
+         scaleMobile: 1.00,
+         color: 0x3fff4a,
+         size: 1.60
+      })
+   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"></script>
+   <script>
+      $(document).ready(function () {
+         /*
+          * Main variables
+          */
+         var content = [{
+            title: "IMPETUS",
+            desc: "Amrit good boy"
+         }, {
+            title: "India the future",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+         },{
+            title: "THIS IS A LINK",
+            desc: [
+               ["<u>AMRIT GOOD BOY</u>"], " again good boy".split("")
+            ]
+         }];
+         var currentPage = 0;
+         //generate content
+         for (var i = 0; i < content.length; i++) {
+            //split content letters to array
+            for (var obj in content[i]) {
+               //if string
+               if (typeof content[i][obj] === "string") {
+                  content[i][obj] = content[i][obj].split("");
+                  continue;
+               }
+               //if array (grouped text)
+               else if (typeof content[i][obj] === "object") {
+                  var toPush = [];
+                  for (var j = 0; j < content[i][obj].length; j++) {
+                     for (var k = 0; k < content[i][obj][j].length; k++) {
+                        toPush.push(content[i][obj][j][k]);
+                     }
+                  }
+                  content[i][obj] = toPush;
+               }
+            }
+            //set text to 
+            $("#segments").append("<div class=\"letters-wrap mutable\"><div class=\"soup-title\"></div><div class=\"soup-desc\"></div></div>");
+            setText();
+            //clone to data
+            $("#segments").append("<div class=\"letters-wrap position-data\"><div class=\"soup-title\"></div><div class=\"soup-desc\"></div></div>");
+            setText();
+         }
+         //initial arrangement
+         arrangeCurrentPage();
+         scrambleOthers();
+         /*
+          * Event handlers
+          */
+         $(window).resize(function () {
+            arrangeCurrentPage();
+            scrambleOthers();
+         });
+         $("#soup-prev").hide();
+         $("#soup-prev").click(function () {
+            $("#soup-next").show();
+            currentPage--;
+            if (currentPage === 0) {
+               $("#soup-prev").hide();
+            }
+            arrangeCurrentPage();
+            scrambleOthers();
+         });
+         $("#soup-next").click(function () {
+            $("#soup-prev").show();
+            currentPage++;
+            if (currentPage === content.length - 1) {
+               $("#soup-next").hide();
+            }
+            arrangeCurrentPage();
+            scrambleOthers();
+         });
+         /*
+          * Functions
+          */
+         function arrangeCurrentPage() {
+            for (var i = 0; i < content[currentPage].title.length; i++) {
+               $(".mutable:eq(" + currentPage + ") > .soup-title > .letter").eq(i).css({
+                  left: $(".position-data:eq(" + currentPage + ") > .soup-title > .letter").eq(i).offset().left + "px",
+                  top: $(".position-data:eq(" + currentPage + ") > .soup-title > .letter").eq(i).offset().top + "px",
+                  color: "#111",
+                  zIndex: 9001
+               });
+            }
+            for (var i = 0; i < content[currentPage].desc.length; i++) {
+               $(".mutable:eq(" + currentPage + ") > .soup-desc > .letter").eq(i).css({
+                  left: $(".position-data:eq(" + currentPage + ") > .soup-desc > .letter").eq(i).offset().left + "px",
+                  top: $(".position-data:eq(" + currentPage + ") > .soup-desc > .letter").eq(i).offset().top + "px",
+                  color: "#111",
+                  zIndex: 9001
+               });
+            }
+         }
+
+         function setText() {
+            var j;
+            for (j = 0; j < content[i].title.length; j++) {
+               $(".soup-title").last().append("<span class=\"letter\">" + content[i].title[j] + "</span>");
+            }
+            for (j = 0; j < content[i].desc.length; j++) {
+               $(".soup-desc").last().append("<span class=\"letter\">" + content[i].desc[j] + "</span>");
+            }
+         }
+
+         function scrambleOthers() {
+            for (var i = 0; i < content.length; i++) {
+               //don't scramble currentPage
+               if (currentPage === i)
+                  continue;
+               var parts = [
+                  ["title", ".soup-title"],
+                  ["desc", ".soup-desc"]
+               ];
+               //apply to .title h1s and .desc ps
+               for (var j = 0; j < parts.length; j++) {
+                  for (var k = 0; k < content[i][parts[j][0]].length; k++) {
+                     //define random position on screen
+                     var randLeft = Math.floor(Math.random() * $(window).width());
+                     var randTop = Math.floor(Math.random() * $(window).height());
+                     //defining boundaries
+                     var offset = $(".position-data").eq(currentPage).offset();
+                     var bounds = {
+                        left: offset.left,
+                        top: offset.top,
+                        right: $(window).width() - offset.left,
+                        bottom: $(window).height() - offset.top
+                     };
+                     var middleX = bounds.left + $(".position-data").eq(currentPage).width() / 2;
+                     var middleY = bounds.top + $(".position-data").eq(currentPage).height() / 2;
+                     //finally, apply all the scrambles
+                     $(".mutable:eq(" + i + ") > " + parts[j][1] + " > .letter").eq(k).css({
+                        left: randLeft,
+                        top: randTop,
+                        color: "#DDD",
+                        zIndex: "initial"
+                     });
+                  }
+               }
+            }
+         }
+      });
+   </script>
+</body>
+
 </html>
