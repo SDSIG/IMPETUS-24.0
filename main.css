@@ -3,6 +3,8 @@
 html {
     font-size: 10px;
     background-color: #000000;
+    max-width: 100%;
+    overflow-x: hidden;
 }
  .spr-card .icon {
 
@@ -1561,7 +1563,12 @@ h3, .h6 hide-on-fullwidt
     background-color: transparent;
     position: absolute;
     top: 0;
-    z-index: 500;
+    z-index: 9002;
+    backdrop-filter: blur(18px) saturate(111%);
+    -webkit-backdrop-filter: blur(18px) saturate(111%);
+    background-color: rgba(255, 255, 255, 0.31);
+    /* border-radius: 12px; */
+    /* border: 1px solid rgba(255, 255, 255, 0.125); */
 }
 
 

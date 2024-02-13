@@ -372,7 +372,7 @@
    </div>
    <header class="s-header">
       <div class="header-logo">
-         <h2 style="color:#FFFFFF;">IMPETUS</h2>
+         <h2 style="color:#000000;">IMPETUS</h2>
       </div>
       <nav class="header-nav">
          <a class="header-nav__close" title="close"><span>Close</span></a>
@@ -426,8 +426,8 @@
       <div id="segments">
       </div>
       <div id="soup-nav">
-         <span id="soup-prev"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i></span>
-         <span id="soup-next"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span>
+         <!-- <span id="soup-prev"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i></span>
+         <span id="soup-next"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span> -->
       </div>
    </div>
 
@@ -1198,8 +1198,8 @@
             scrambleOthers();
          });
          /*
-          * Functions
-          */
+         * Functions
+         */
          function arrangeCurrentPage() {
             for (var i = 0; i < content[currentPage].title.length; i++) {
                $(".mutable:eq(" + currentPage + ") > .soup-title > .letter").eq(i).css({
@@ -1233,10 +1233,10 @@
             for (var i = 0; i < content.length; i++) {
                //don't scramble currentPage
                if (currentPage === i)
-                  continue;
-               var parts = [
-                  ["title", ".soup-title"],
-                  ["desc", ".soup-desc"]
+               continue;
+            var parts = [
+               ["title", ".soup-title"],
+               ["desc", ".soup-desc"]
                ];
                //apply to .title h1s and .desc ps
                for (var j = 0; j < parts.length; j++) {
@@ -1258,13 +1258,21 @@
                      $(".mutable:eq(" + i + ") > " + parts[j][1] + " > .letter").eq(k).css({
                         left: randLeft,
                         top: randTop,
-                        color: "#DDD",
+                        color: "#21c7fa",
                         zIndex: "initial"
                      });
                   }
                }
             }
          }
+         setInterval(()=>{
+            currentPage++;
+            if ((currentPage%(content.length-1)) === content.length - 1) {
+               $("#soup-next").hide();
+            }
+            arrangeCurrentPage();
+            scrambleOthers();
+         },4000)
       });
    </script>
 </body>
