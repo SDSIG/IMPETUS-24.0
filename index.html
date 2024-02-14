@@ -426,12 +426,12 @@
       <div id="segments">
       </div>
       <div class="main-hero">
-         <div class="hero-btns">
-            <button class="btn btn--stroke events-button" >Submit</button>
-            <button class="btn btn--stroke events-button" >Submit</button>
-            <button class="btn btn--stroke events-button" >Submit</button>
+         <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000" class="hero-btns">
+            <button class="btn btn--stroke events-button" >Submit text to make it look big →</button>
+            <button class="btn btn--stroke events-button" >Submit text to make it look big →</button>
+            <button class="btn btn--stroke events-button" >Submit text to make it look big →</button>
          </div>
-         <img src="./no_tag_dark.png" alt="">
+         <img  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="3000"src="./no_tag_dark.png" alt="">
       </div>
       <div id="soup-nav">
          <!-- <span id="soup-prev"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i></span>
@@ -1165,16 +1165,11 @@
           * Main variables
           */
          var content = [{
-            title: "IMPETUS",
-            desc: "Amrit good boy"
+            title: "IEEE UVCE PRESENTS",
+            desc: "BIGGEST TECHNICLE FEST OF UVCE"
          }, {
-            title: "India the future",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-         }, {
-            title: "THIS IS A LINK",
-            desc: [
-               ["<u>AMRIT</u>"], "is good boy".split("")
-            ]
+            title: "Registrations open now !!!",
+            desc: ""
          }];
          var currentPage = 0;
          //generate content
@@ -1308,10 +1303,11 @@
             }
             arrangeCurrentPage();
             scrambleOthers();
-         }, 3000)
+         }, 2200)
          setTimeout(()=>{
             document.querySelector("#segments").style.opacity="0"
-         },9000)
+            // document.querySelector(".main-hero").style.display="flex"
+         },4000)
       });
    </script>
 </body>
