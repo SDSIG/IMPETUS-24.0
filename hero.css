@@ -54,7 +54,7 @@
 
 #soup-container img {
     width: 400px;
-    z-index: 9003;
+    /* z-index: 9003; */
     /* background-color: rgba(46, 234, 255, 0.9);
     -webkit-box-shadow: 0px 0px 105px 20px rgba(46, 234, 255, 0.9);
     -moz-box-shadow: 0px 0px 105px 20px rgba(46, 234, 255, 0.9);
