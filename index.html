@@ -15,11 +15,11 @@
    <link rel="stylesheet" href="./base.css">
    <link rel="stylesheet" href="./vendor.css">
    <link rel="stylesheet" href="./main.css">
-   <link rel="stylesheet" href="hero.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <!-- CSS links-->
    </script>
    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="stylesheet" href="hero.css">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
    <link rel="icon" type="image/x-icon" href="./light_handle.png">
@@ -350,19 +350,19 @@
 
 <body id="top" class=" vsc-initialized pace-done" data-aos-easing="ease-in-sine" data-aos-duration="600"
    data-aos-delay="300">
-   <!-- <div class="loader-wrapper">
+   <div class="loader-wrapper">
       <div class="loader"><img alt="" src="./e2e80b0a55c5bbb2e2ba02aa05ab8de4.gif"
             style="height: 60vh; width: 40vw; max-width: 300px; max-height: 300px;">
          <div class="typewriter">LOADING</div>
       </div>
-   </div> -->
+   </div>
    </center>
-   <!-- <div id="loading"></div> -->
-   <div class="parallax-mirror"
+   <div id="loading"></div>
+   <!-- <div class="parallax-mirror"
       style="visibility: visible; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 910.875px; width: 1905px;">
       <img alt="" class="parallax-slider" src="./hero-bg.jpg"
          style="transform: translate3d(0px, 0px, 0px); position: absolute; left: 0px; height: 1270px; width: 1905px; max-width: none; top: -193px;">
-   </div>
+   </div> -->
    <div class="pace  pace-inactive">
       <div class="pace-progress" data-progress-text="100%" data-progress="99"
          style="transform: translate3d(100%, 0px, 0px);">
@@ -372,7 +372,7 @@
    </div>
    <header class="s-header">
       <div class="header-logo">
-         <h2 style="color:#000000;">IMPETUS</h2>
+         <h2 style="color:#FFFFFF;">IMPETUS</h2>
       </div>
       <nav class="header-nav">
          <a class="header-nav__close" title="close"><span>Close</span></a>
@@ -1121,6 +1121,34 @@
    </script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+   <script>
+      var setVanta = () => {
+         if (window.VANTA) window.VANTA.NET({
+            el: ".s-page-1 .s-section-1 .s-section",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x#39b54a,
+            backgroundColor: 0x#000000,
+            points: 13.00
+         })
+      }
+      _strk.push(function () {
+         setVanta()
+         window.edit_page.Event.subscribe("Page.beforeNewOneFadeIn", setVanta)
+      })
+   </script>
+   <script src="./jquery-3.6.1.min.js"></script>
+   <script src="./plugins.js"></script>
+   <script src="./main.js"></script>
+   <script defer="" src="./vaafb692b2aea4879b33c060e79fe94621666317369993"
+      integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+      data-cf-beacon="{&quot;rayId&quot;:&quot;7920c2e19a44a135&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;,&quot;version&quot;:&quot;2022.11.3&quot;,&quot;si&quot;:100}"
+      crossorigin="anonymous"></script>
    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"></script>
    <script>
@@ -1134,7 +1162,7 @@
          }, {
             title: "India the future",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-         },{
+         }, {
             title: "THIS IS A LINK",
             desc: [
                ["<u>AMRIT</u>"], "is good boy".split("")
@@ -1233,10 +1261,10 @@
             for (var i = 0; i < content.length; i++) {
                //don't scramble currentPage
                if (currentPage === i)
-               continue;
-            var parts = [
-               ["title", ".soup-title"],
-               ["desc", ".soup-desc"]
+                  continue;
+               var parts = [
+                  ["title", ".soup-title"],
+                  ["desc", ".soup-desc"]
                ];
                //apply to .title h1s and .desc ps
                for (var j = 0; j < parts.length; j++) {
@@ -1265,14 +1293,14 @@
                }
             }
          }
-         setInterval(()=>{
+         setInterval(() => {
             currentPage++;
-            if ((currentPage%(content.length-1)) === content.length - 1) {
+            if ((currentPage % (content.length - 1)) === content.length - 1) {
                $("#soup-next").hide();
             }
             arrangeCurrentPage();
             scrambleOthers();
-         },4000)
+         }, 4000)
       });
    </script>
 </body>
