@@ -130,7 +130,7 @@
     left: 0;
     top: 0;
     transition: left 0.7s, top 0.7s, color 0.7s;
-    color: #C1F2B0;
+    color: rgb(101, 185, 65,0.3);
 }
 
 .letters-wrap.mutable .letter.active {
