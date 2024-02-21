@@ -17,6 +17,12 @@
     flex-direction: column;
 }
 
+.hero-btns button {
+    -webkit-box-shadow: 0px 0px 13px 3px rgba(251, 246, 238, 0.67);
+    -moz-box-shadow: 0px 0px 13px 3px rgba(251, 246, 238, 0.67);
+    box-shadow: 0px 0px 13px 3px rgba(251, 246, 238, 0.67);
+}
+
 
 #soup-nav {
     position: absolute;
@@ -57,12 +63,15 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(32, 30, 41, 0.815);
+    background-color: rgba(32, 30, 41, 0.719);
     /* Blue mask with 50% opacity */
 }
 
 #soup-container img {
     width: 400px;
+    /* -webkit-filter: drop-shadow(12px 12px 7px rgb(251, 246, 238, 0.59)); */
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(251, 246, 238, 0.805));
+    filter: drop-shadow(0px 0px 10px rgba(251, 246, 238, 0.805));
     /* z-index: 9003; */
     /* background-color: rgba(46, 234, 255, 0.9);
     -webkit-box-shadow: 0px 0px 105px 20px rgba(46, 234, 255, 0.9);
@@ -88,11 +97,11 @@
     left: 0;
     top: 0;
     transition: left 2s, top 2s, color 2s;
-    color: #21c7fa;
+    color: #C1F2B0;
 }
 
 .letters-wrap.mutable .letter.active {
-    color: #111;
+    color: #FBF6EE;
     z-index: 9001;
 }
 
@@ -121,3 +130,18 @@ button {
     z-index: 9001;
     position: relative;
 }
+
+@media only screen and (max-width: 500px) {
+    #soup-container img {
+        width: 80%;
+    }
+
+    .main-hero {
+        align-items: baseline;
+    }
+}
+
+/* 
+@media only screen and (max-width: 400px) {
+    
+} */
