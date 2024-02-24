@@ -1337,7 +1337,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-size: 5.2rem;
     text-transform: uppercase;
     letter-spacing: .12rem;
-    color: #39b54a;
+    color: #0400ff;
     margin-top: 0;
 }
 
@@ -2362,7 +2362,7 @@ html.cl-loaded .home-content__main {
 .s-about {
     padding-top: 10.2rem;
     padding-bottom: 9rem;
-    background-color: #39b54a;
+    background-color: #00fef9cb;
     color: #010507;
     position: relative;
 }
