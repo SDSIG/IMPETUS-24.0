@@ -61,7 +61,8 @@
     overflow: hidden;
     /* Hide overflowing content */
     text-align: center;
-    background-image: url('../simplebg-01.png');
+    /* background-image: url('../simplebg-01.png'); */
+    background-image: url('../india-republic-day-celebration-digital-art-with-flag.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -80,7 +81,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(32, 30, 41, 0.719);
+    /* background-color: rgba(32, 30, 41, 0.719); */
     /* Blue mask with 50% opacity */
 }
 
