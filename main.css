@@ -3521,7 +3521,7 @@ background-color: #e6e6e6;;
  *
  * ------------------------------------------------------------------- */
 footer {
-    background-image: url(./5335769.jpg);
+    background-image: url(./footer.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
   background-position: center;
@@ -3533,6 +3533,7 @@ footer {
     text-align: center;
     color: rgba(255, 255, 255, 0.3);
 }
+
 
 footer h4 {
     color: #FFFFFF;
@@ -3596,6 +3597,7 @@ footer .row {
     font-weight: bolder;
     text-align: left;
     margin-top: 1rem;
+    padding: 0 2rem;
 }
 .footer-links h3
 {
@@ -3847,6 +3849,7 @@ footer .row {
     .footer-main .right {
         padding-left: 0;
     }
+    
 }
 
 
