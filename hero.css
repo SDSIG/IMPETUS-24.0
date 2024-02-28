@@ -172,6 +172,7 @@ button {
     }
     .hero-btns{
         padding: 0 20px;
+        margin-top: -80px;
     }
     .main-hero{
         padding: 25px 15px;
