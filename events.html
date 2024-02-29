@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>EVENTS</title>
   <meta charset="utf-8">
@@ -10,350 +11,386 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link src="./events.css">
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    html
-    {
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    html {
       background-image: url(./5335769.jpg);
-  background-repeat: no-repeat; 
-  background-size: cover;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
+
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }
-    
+
     /* Add a gray background color and some padding to the footer */
 
-  .carousel-inner img {
-      width: 100%; /* Set width to 100% */
+    .carousel-inner img {
+      width: 100%;
+      /* Set width to 100% */
       margin: auto;
-      min-height:200px;
-  }
-  
-  /* Hide the carousel text when the screen is less than 600 pixels wide */
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; 
+      min-height: 200px;
     }
-  }
-  .card {
-    width: var(--card-width);
-    height: var(--card-height);
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 0 36px;
-    perspective: 2500px;
-    margin: 0 50px;
-  }
-  
-  .cover-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .wrapper {
-    transition: all 0.5s;
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-  }
-  
-  .card:hover .wrapper {
-    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
-    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
-  }
-  
-  .wrapper::before,
-  .wrapper::after {
-    content: "";
-    opacity: 0;
-    width: 100%;
-    height: 80px;
-    transition: all 0.5s;
-    position: absolute;
-    left: 0;
-  }
-  .wrapper::before {
-    top: 0;
-    height: 100%;
-    background-image: linear-gradient(
-      to top,
-      transparent 46%,
-      rgba(12, 13, 19, 0.5) 68%,
-      rgba(12, 13, 19) 97%
-    );
-  }
-  .wrapper::after {
-    bottom: 0;
-    opacity: 1;
-    background-image: linear-gradient(
-      to bottom,
-      transparent 46%,
-      rgba(12, 13, 19, 0.5) 68%,
-      rgba(12, 13, 19) 97%
-    );
-  }
-  
-  .card:hover .wrapper::before,
-  .wrapper::after {
-    opacity: 1;
-  }
-  
-  .card:hover .wrapper::after {
-    height: 100%;
-  }
-  .title {
-    width: 100%;
-    transition: transform 0.5s;
-  }
-  .card:hover .title {
-    transform: translate3d(0%, -50px, 100px);
-  }
-  
-  .character {
-    width: 100%;
-    opacity: 0;
-    transition: all 0.5s;
-    position: absolute;
-    z-index: -1;
-  }
-  
-  .card:hover .character {
-    opacity: 1;
-    transform: translate3d(0%, -30%, 100px);
-  }
-  .div1 {
-    width: 100%;
-    height: 40%;
-    padding: 50px;
 
-  }
-  
-  .div2 {
-    width: 100%;
-    height: 30%;  
-  }
-  .wrap {
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	width: 90%;
-  max-width: 400px;
-  max-height: 400px;
-	height: 40vh;
-	border: 8px solid;
-	border-image: linear-gradient(-50deg, green, #00b300, forestgreen, green, lightgreen, #00e600, green) 1;
-	margin: 2rem auto;
-	transition: .3s ease-in-out;
-	position: relative;
-	overflow: hidden;
-}
-.overlay {
-	position: relative;
-	display: flex;
-	width: 100%;
-	height: 100%;
-	padding: 1rem .75rem;
-	background: #186218;
-	transition: .4s ease-in-out;
-	z-index: 1;
-}
-.overlay-content {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 30%;
-	height: 100%;
-	padding: .5rem 0 0 .5rem;
-	border: 3px solid;
-	border-image: 
-    	linear-gradient(
-      	to bottom, 
-      	#AEA724 5%,
-      	forestgreen 35% 65%,
-      	#AEA724 95%
-    	) 0 0 0 100%;
-	transition: .3s ease-in-out .2s;
-	z-index: 1;
-}
-.image-content {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100vmin;
-  max-height: 400px;
-  min-height: 200px;
-	height: 90%;
-	background-image: url("");
-	background-size: cover;
-	transition: .3s ease-in-out;
-	/* border: 1px solid green; */
-}
-.display-1--light {
-    color: #ffffff;
-    font-size: 5.3rem ;
-}
-.dots {
-	position: absolute;
-	bottom: 1rem;
-	right: 2rem;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	width: 55px;
-	height: 4vmin;
-	transition: .3s ease-in-out .3s;
-}
-.row
-{
-  margin: 0;
-}
-.dot {
-	width: 14px;
-	height: 14px;
-	background: yellow;
-	border: 1px solid indigo;
-	border-radius: 50%;
-	transition: .3s ease-in-out .3s;
-}
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none;
+      }
+    }
 
-.text {
-  text-align: justify;
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 30min;
-	height: 100%;
-	padding: 3vmin 4vmin;
-	background: #fff;
-	box-shadow: inset 1px 1px 15px 0 rgba(0 0 0 / .4);
-	overflow-y: scroll;
-}
+    .card {
+      width: var(--card-width);
+      height: var(--card-height);
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding: 0 36px;
+      perspective: 2500px;
+      margin: 0 50px;
+    }
 
-.wrap:hover .overlay
- {
-	transform: translateX(-100vmin);
-}
-.wrap:hover .image-content {
-	width: 30vmin;
-}
-.wrap:hover .overlay-content {
-	border: none;
-	transition-delay: .2s;
-	transform: translateX(60vmin);
-}
-.wrap:hover .dots {
-	transform: translateX(1rem);
-}
-.wrap:hover .dots .dot {
-	background: white;
-}
+    .cover-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .wrapper {
+      transition: all 0.5s;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .card:hover .wrapper {
+      transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+      box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    }
+
+    .wrapper::before,
+    .wrapper::after {
+      content: "";
+      opacity: 0;
+      width: 100%;
+      height: 80px;
+      transition: all 0.5s;
+      position: absolute;
+      left: 0;
+    }
+
+    .wrapper::before {
+      top: 0;
+      height: 100%;
+      background-image: linear-gradient(to top,
+          transparent 46%,
+          rgba(12, 13, 19, 0.5) 68%,
+          rgba(12, 13, 19) 97%);
+    }
+
+    .wrapper::after {
+      bottom: 0;
+      opacity: 1;
+      background-image: linear-gradient(to bottom,
+          transparent 46%,
+          rgba(12, 13, 19, 0.5) 68%,
+          rgba(12, 13, 19) 97%);
+    }
+
+    .card:hover .wrapper::before,
+    .wrapper::after {
+      opacity: 1;
+    }
+
+    .card:hover .wrapper::after {
+      height: 100%;
+    }
+
+    .title {
+      width: 100%;
+      transition: transform 0.5s;
+    }
+
+    .card:hover .title {
+      transform: translate3d(0%, -50px, 100px);
+    }
+
+    .character {
+      width: 100%;
+      opacity: 0;
+      transition: all 0.5s;
+      position: absolute;
+      z-index: -1;
+    }
+
+    .card:hover .character {
+      opacity: 1;
+      transform: translate3d(0%, -30%, 100px);
+    }
+
+    .div1 {
+      width: 100%;
+      height: 40%;
+      padding: 50px;
+
+    }
+
+    .div2 {
+      width: 100%;
+      height: 30%;
+    }
+
+    .wrap {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      width: 90%;
+      max-width: 400px;
+      max-height: 400px;
+      height: 40vh;
+      border: 8px solid;
+      border-image: linear-gradient(-50deg, green, #00b300, forestgreen, green, lightgreen, #00e600, green) 1;
+      margin: 2rem auto;
+      transition: .3s ease-in-out;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .overlay {
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      padding: 1rem .75rem;
+      background: #186218;
+      transition: .4s ease-in-out;
+      z-index: 1;
+    }
+
+    .overlay-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30%;
+      height: 100%;
+      padding: .5rem 0 0 .5rem;
+      border: 3px solid;
+      border-image:
+        linear-gradient(to bottom,
+          #AEA724 5%,
+          forestgreen 35% 65%,
+          #AEA724 95%) 0 0 0 100%;
+      transition: .3s ease-in-out .2s;
+      z-index: 1;
+    }
+
+    .image-content {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100vmin;
+      max-height: 400px;
+      min-height: 200px;
+      height: 90%;
+      background-image: url("");
+      background-size: cover;
+      transition: .3s ease-in-out;
+      /* border: 1px solid green; */
+    }
+
+    .display-1--light {
+      color: #ffffff;
+      font-size: 5.3rem;
+    }
+
+    .dots {
+      position: absolute;
+      bottom: 1rem;
+      right: 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 55px;
+      height: 4vmin;
+      transition: .3s ease-in-out .3s;
+    }
+
+    .row {
+      margin: 0;
+    }
+
+    .dot {
+      width: 14px;
+      height: 14px;
+      background: yellow;
+      border: 1px solid indigo;
+      border-radius: 50%;
+      transition: .3s ease-in-out .3s;
+    }
+
+    .text {
+      text-align: justify;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30min;
+      height: 100%;
+      padding: 3vmin 4vmin;
+      background: #fff;
+      box-shadow: inset 1px 1px 15px 0 rgba(0 0 0 / .4);
+      overflow-y: scroll;
+    }
+
+    .wrap:hover .overlay {
+      transform: translateX(-100vmin);
+    }
+
+    .wrap:hover .image-content {
+      width: 30vmin;
+    }
+
+    .wrap:hover .overlay-content {
+      border: none;
+      transition-delay: .2s;
+      transform: translateX(60vmin);
+    }
+
+    .wrap:hover .dots {
+      transform: translateX(1rem);
+    }
+
+    .wrap:hover .dots .dot {
+      background: white;
+    }
 
 
-/* Animations and timing delays */
-.animate {
-  animation-duration: 0.7s;
-  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
-  animation-fill-mode: backwards;
-}
-/* Pop In */
-.pop { animation-name: pop; }
-@keyframes pop {
-  0% {
-    opacity: 0;
-    transform: scale(0.5, 0.5);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1, 1);
-  }
-}
+    /* Animations and timing delays */
+    .animate {
+      animation-duration: 0.7s;
+      animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+      animation-fill-mode: backwards;
+    }
 
-/* Slide In */
-.slide { animation-name: slide; }
-@keyframes slide {
-  0% {
-    opacity: 0;
-    transform: translate(4em, 0);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
+    /* Pop In */
+    .pop {
+      animation-name: pop;
+    }
 
-/* Slide Left */
-.slide-left { animation-name: slide-left; }
-@keyframes slide-left {
-  0% {
-    opacity: 0;
-    transform: translate(-5%, 0);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
+    @keyframes pop {
+      0% {
+        opacity: 0;
+        transform: scale(0.5, 0.5);
+      }
 
-.slide-up {animation-name: slide-up;}
-@keyframes slide-up {
-	0% {
-		opacity: 0;
-		transform: translateY(3em);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
+      100% {
+        opacity: 1;
+        transform: scale(1, 1);
+      }
+    }
 
-.delay-1 {
-  animation-delay: 0.3s;
-}
-.delay-2 {
-  animation-delay: 0.6s;
-}
-.delay-3 {
-  animation-delay: 0.9s;
-}
-.delay-4 {
-  animation-delay: 1.2s;
-}
-.delay-5 {
-  animation-delay: 1.5s;
-}
-.delay-6 {
-  animation-delay: 1.8s;
-}
-.delay-7 {
-  animation-delay: 2.1s;
-}
-.delay-8 {
-  animation-delay: 2.4s;
-}
-body
-{
-  background-image: url(./5335769.jpg);
-  background-repeat: no-repeat; 
-  background-size: cover;
-}
+    /* Slide In */
+    .slide {
+      animation-name: slide;
+    }
+
+    @keyframes slide {
+      0% {
+        opacity: 0;
+        transform: translate(4em, 0);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+    }
+
+    /* Slide Left */
+    .slide-left {
+      animation-name: slide-left;
+    }
+
+    @keyframes slide-left {
+      0% {
+        opacity: 0;
+        transform: translate(-5%, 0);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+    }
+
+    .slide-up {
+      animation-name: slide-up;
+    }
+
+    @keyframes slide-up {
+      0% {
+        opacity: 0;
+        transform: translateY(3em);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .delay-1 {
+      animation-delay: 0.3s;
+    }
+
+    .delay-2 {
+      animation-delay: 0.6s;
+    }
+
+    .delay-3 {
+      animation-delay: 0.9s;
+    }
+
+    .delay-4 {
+      animation-delay: 1.2s;
+    }
+
+    .delay-5 {
+      animation-delay: 1.5s;
+    }
+
+    .delay-6 {
+      animation-delay: 1.8s;
+    }
+
+    .delay-7 {
+      animation-delay: 2.1s;
+    }
+
+    .delay-8 {
+      animation-delay: 2.4s;
+    }
+
+    body {
+      background-image: url(./5335769.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   </style>
 </head>
+
 <body>
 
-<nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="index.html">
-    <img src="./light_handle.png" width="100" height="100" alt="">
-  </a>
-</nav>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+      <img src="./light_handle.png" width="100" height="100" alt="">
+    </a>
+  </nav>
 
-  
+
   <!-- <div class="row">
     <div class="col-sm-3">
        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
@@ -374,15 +411,15 @@ body
   
   
    </div> -->
-   
-  
+
+
   <h1></h1>
 
-  
+
   <div class="row">
     <!-- <div class="col-sm-3">  -->
-        <!-- Without content card -->
-        <!-- <div class="card">
+    <!-- Without content card -->
+    <!-- <div class="card">
             <div class="wrapper">
               <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-cover.jpg" class="cover-image" />
             </div>
@@ -392,8 +429,8 @@ body
 
 
 
-          <!-- With content -->
-          <!-- <div class="wrap animate pop">
+    <!-- With content -->
+    <!-- <div class="wrap animate pop">
             <div class="overlay">
                 <div class="overlay-content animate slide-left delay-2">
                     <p class="animate slide-left pop delay-5" style="color: white; ;">Kingdom: <em>Plantae</em></p>
@@ -412,8 +449,8 @@ body
                 </div>
         </div> -->
     <!-- </div> -->
- <!-- without content -->
-      <!-- <div class="col-sm-3"> 
+    <!-- without content -->
+    <!-- <div class="col-sm-3"> 
         <div class="card">
             <div class="wrapper">
               <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-cover.jpg" class="cover-image" />
@@ -422,345 +459,380 @@ body
             <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-character.webp" class="character" />
           </div> 
       </div> -->
-  
-</div><br>
+
+  </div><br>
 
 
   <h1 class=".display-1--light" style="color: white;text-align: center ;">Flagship Events</h1>
   <div class="row">
     <div class="col-sm-3">
-        <div class="wrap animate pop">
-            <div class="overlay"
-            style="background-image: url('silick.webp'); background-size: 100%;background-repeat: no-repeat;text-align: center;">
-                <div class="overlay-content animate slide-left delay-2">
-                    
-                </div>
-                <div class="image-content animate slide delay-5"></div>
-                        <div class="dots animate">
-                            <div class="dot animate slide-up delay-6"></div>
-                            <div class="dot animate slide-up delay-7"></div>
-                            <div class="dot animate slide-up delay-8"></div>
-                        </div>
-            </div>
-                <div class="text" style="text-align: justify;">
-                    <p>Event Name: Silic-O-Hack</p>
-                    <p>Category: Flagship</p>
-                    <p>Description: A virtual hardware hackathon using simulation software that requires you to solve a real-world problem statement, to be completed within the given time with an innovative approach.</p>
-                </div>
-        </div>
-    </div>
-    <div class="col-sm-3"> 
-        <div class="wrap animate pop">
-            <div class="overlay" style="background-image: url('codestorm.webp'); background-size: 100%;background-repeat: no-repeat;">
-                <div class="overlay-content animate slide-left delay-2">
-                </div>
-                <div class="image-content animate slide delay-5"></div>
-                        <div class="dots animate">
-                            <div class="dot animate slide-up delay-6"></div>
-                            <div class="dot animate slide-up delay-7"></div>
-                            <div class="dot animate slide-up delay-8"></div>
-                        </div>
-            </div>
-                  <div class="text">
-                    <p>Event Name: CodeStorm</p>
-                    <p>Category: Flagship</p>
-                    <p>Description: Participants will be asked to code a solution to the competitive programming problems, which requires the application of  brainstorming logic and ideas. The event is divided into two rounds. 
-                      In the first round the participants will be asked to solve 5 problems to test the knowledge and problem solving skills of the participants. The second round will require the participants to solve an optimization problem where the points will be scored based on the degree of optimisation.</p>
-                </div>
-                
-        </div> 
-    </div>
-    <div class="col-sm-3"> 
-        <div class="wrap animate pop">
-            <div class="overlay" style="background-image: url('summit.webp'); background-size: 100%;background-repeat: no-repeat;">
-                <div class="overlay-content animate slide-left delay-2" >
-                </div>
-                <div class="image-content animate slide delay-5"></div>
-                        <div class="dots animate">
-                            <div class="dot animate slide-up delay-6"></div>
-                            <div class="dot animate slide-up delay-7"></div>
-                            <div class="dot animate slide-up delay-8"></div>
-                        </div>
-            </div>
-            <div class="text">
-              <p>Event Name: Summit</p>
-              <p>Category: Flagship</p>
-              <p>Description: Summit is a student parliament where participants work in teams to analyze the problems, identify key issues and brainstorm potential solutions for a given problem statement.</p>
-          </div>
-        </div> 
-    </div>
-    <div class="col-sm-3"> 
-        <div class="wrap animate pop">
-            <div class="overlay" style="background-image: url('civi.webp'); background-size: 100%;background-repeat: no-repeat;">
-                <div class="overlay-content animate slide-left delay-2">
-                </div>
-                <div class="image-content animate slide delay-5"></div>
-                        <div class="dots animate">
-                            <div class="dot animate slide-up delay-6"></div>
-                            <div class="dot animate slide-up delay-7"></div>
-                            <div class="dot animate slide-up delay-8"></div>
-                        </div>
-            </div>
-            <div class="text">
-              <p>Event Name: Civicture</p>
-              <p>Category: Flagship</p>
-              <p>Description: Civicture is a event that challenges participants to tackle a real-world water issue by brainstorming and proposing innovative solutions. Participants have the opportunity to showcase their problem-solving abilities develop effective and sustainable solutions that can make a positive impact on the society.</p>
-          </div>
-        </div> 
-        
-  </div>
-  
-  <div class="row">
-    
-  <div class="col-sm-3"> 
-    <div class="wrap animate pop">
-        <div class="overlay" style="background-image: url('mock.webp'); background-size: 100%;background-repeat: no-repeat;">
-            <div class="overlay-content animate slide-left delay-2">
-                
-            </div>
-            <div class="image-content animate slide delay-5"></div>
-                    <div class="dots animate">
-                        <div class="dot animate slide-up delay-6"></div>
-                        <div class="dot animate slide-up delay-7"></div>
-                        <div class="dot animate slide-up delay-8"></div>
-                    </div>
-        </div>
-        <div class="text">
-          <p>Event Name: Mock Placements</p>
-          <p>Category: Flagship</p>
-          <p>Description: Mock placement typically simulates a real-life job placement process to help students and job seekers prepare for interviews and assessments that consists of two tracks namely IT and Core. It helps participants in improving their performance and increasing their chances of success in real job placements.</p>
-      </div>
-    </div> 
-    
-</div>
-<div class="col-sm-3"> 
-    <div class="wrap animate pop">
-        <div class="overlay" style="background-image: url('hackamaze.webp'); background-size: 100%;background-repeat: no-repeat;">
-            <div class="overlay-content animate slide-left delay-2">
-              
-            </div>
-            <div class="image-content animate slide delay-5"></div>
-                    <div class="dots animate">
-                        <div class="dot animate slide-up delay-6"></div>
-                        <div class="dot animate slide-up delay-7"></div>
-                        <div class="dot animate slide-up delay-8"></div>
-                    </div>
-        </div>
-        <div class="text">
-          <p>Event Name: Hack-A-Maze</p>
-          <p>Category: Flagship</p>
-          <p>Description: Hack-A-Maze is an event to test the electronic and programming skills of engineers. where bots are passed through mazes and the bot which passes the maze quickly is considered as the winner.</p>
-      </div>
-    </div> 
-    
-    
-</div>
-<div class="col-sm-3"> 
-  <div class="wrap animate pop">
-      <div class="overlay" style="background-image: url('mechronics.webp'); background-size: 100%;background-repeat: no-repeat;">
+      <div class="wrap animate pop">
+        <div class="overlay"
+          style="background-image: url('silick.webp'); background-size: 100%;background-repeat: no-repeat;text-align: center;">
           <div class="overlay-content animate slide-left delay-2">
-            
+
           </div>
           <div class="image-content animate slide delay-5"></div>
-                  <div class="dots animate">
-                      <div class="dot animate slide-up delay-6"></div>
-                      <div class="dot animate slide-up delay-7"></div>
-                      <div class="dot animate slide-up delay-8"></div>
-                  </div>
-      </div>
-      <div class="text">
-        <p>Event Name: Mechronics</p>
-        <p>Category: Flagship</p>
-        <p>Description: Mechronins, an event where participant’s hold over technical knowledge is tested through fun yet very informative rounds. This event has many different forms including puzzles, quest and educational presentations.
-          Teams performing the best will be qualified</p>
-    </div>
-  </div> 
-  
-  
-</div>
-
-  
-</div>
-  </div>
-  <h1 class=".display-1--light" style="color: white;text-align: center ;">General Events</h1>
-<div class="row">
-    <div class="col-sm-3">
-        <div class="wrap animate pop">
-            <div class="overlay"
-            style="background-image: url('ar\ wizards.webp'); background-size: 100%;background-repeat: no-repeat;">
-                <div class="overlay-content animate slide-left delay-2">
-                    
-                </div>
-                <div class="image-content animate slide delay-5"></div>
-                        <div class="dots animate">
-                            <div class="dot animate slide-up delay-6"></div>
-                            <div class="dot animate slide-up delay-7"></div>
-                            <div class="dot animate slide-up delay-8"></div>
-                        </div>
-            </div>
-                <div class="text">
-                  <p>Event Name: AR Wizards: The magic of reality</p>
-                  <p>Category: General</p>
-                  <p>Description: Participants will be tasked to find objects in the AR world that will give participants access to a file containing broken code in both C++ and Java programming languages.
-                    Participants will work together to combine the code and fix the errors to create a functional program.</p>
-                </div>
+          <div class="dots animate">
+            <div class="dot animate slide-up delay-6"></div>
+            <div class="dot animate slide-up delay-7"></div>
+            <div class="dot animate slide-up delay-8"></div>
+          </div>
         </div>
+        <div class="text" style="text-align: justify;">
+          <p>Event Name: Silic-O-Hack</p>
+          <p>Category: Flagship</p>
+          <p>Description: A virtual hardware hackathon using simulation software that requires you to solve a real-world
+            problem statement, to be completed within the given time with an innovative approach.</p>
+        </div>
+      </div>
     </div>
     <div class="col-sm-3">
       <div class="wrap animate pop">
-          <div class="overlay"
-          style="background-image: url('Aranyani\ .webp'); background-size: 100%;background-repeat: no-repeat;">
-              <div class="overlay-content animate slide-left delay-2">
-                  
-              </div>
-              <div class="image-content animate slide delay-5"></div>
-                      <div class="dots animate">
-                          <div class="dot animate slide-up delay-6"></div>
-                          <div class="dot animate slide-up delay-7"></div>
-                          <div class="dot animate slide-up delay-8"></div>
-                      </div>
-          </div>
-              <div class="text">
-                <p>Event Name: ARANYANI</p>
-                <p>Category: General</p>
-                <p>Description: ARANYANI is a sustainable event focusing on driving awareness among the future generations to be more eco-friendly and helps in upskilling creative thinking by building sustainable constructions from scratch.</p>
-              </div>
-      </div>
-  </div>
-  <div class="col-sm-3">
-    <div class="wrap animate pop">
         <div class="overlay"
-        style="background-image: url('Clash\ of\ Codes\ 2\ final.webp'); background-size: 100%;background-repeat: no-repeat;">
+          style="background-image: url('codestorm.webp'); background-size: 100%;background-repeat: no-repeat;">
+          <div class="overlay-content animate slide-left delay-2">
+          </div>
+          <div class="image-content animate slide delay-5"></div>
+          <div class="dots animate">
+            <div class="dot animate slide-up delay-6"></div>
+            <div class="dot animate slide-up delay-7"></div>
+            <div class="dot animate slide-up delay-8"></div>
+          </div>
+        </div>
+        <div class="text">
+          <p>Event Name: CodeStorm</p>
+          <p>Category: Flagship</p>
+          <p>Description: Participants will be asked to code a solution to the competitive programming problems, which
+            requires the application of brainstorming logic and ideas. The event is divided into two rounds.
+            In the first round the participants will be asked to solve 5 problems to test the knowledge and problem
+            solving skills of the participants. The second round will require the participants to solve an optimization
+            problem where the points will be scored based on the degree of optimisation.</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="wrap animate pop">
+        <div class="overlay"
+          style="background-image: url('summit.webp'); background-size: 100%;background-repeat: no-repeat;">
+          <div class="overlay-content animate slide-left delay-2">
+          </div>
+          <div class="image-content animate slide delay-5"></div>
+          <div class="dots animate">
+            <div class="dot animate slide-up delay-6"></div>
+            <div class="dot animate slide-up delay-7"></div>
+            <div class="dot animate slide-up delay-8"></div>
+          </div>
+        </div>
+        <div class="text">
+          <p>Event Name: Summit</p>
+          <p>Category: Flagship</p>
+          <p>Description: Summit is a student parliament where participants work in teams to analyze the problems,
+            identify key issues and brainstorm potential solutions for a given problem statement.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="wrap animate pop">
+        <div class="overlay"
+          style="background-image: url('civi.webp'); background-size: 100%;background-repeat: no-repeat;">
+          <div class="overlay-content animate slide-left delay-2">
+          </div>
+          <div class="image-content animate slide delay-5"></div>
+          <div class="dots animate">
+            <div class="dot animate slide-up delay-6"></div>
+            <div class="dot animate slide-up delay-7"></div>
+            <div class="dot animate slide-up delay-8"></div>
+          </div>
+        </div>
+        <div class="text">
+          <p>Event Name: Civicture</p>
+          <p>Category: Flagship</p>
+          <p>Description: Civicture is a event that challenges participants to tackle a real-world water issue by
+            brainstorming and proposing innovative solutions. Participants have the opportunity to showcase their
+            problem-solving abilities develop effective and sustainable solutions that can make a positive impact on the
+            society.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-3">
+        <div class="wrap animate pop">
+          <div class="overlay"
+            style="background-image: url('mock.webp'); background-size: 100%;background-repeat: no-repeat;">
             <div class="overlay-content animate slide-left delay-2">
-                
+
             </div>
             <div class="image-content animate slide delay-5"></div>
-                    <div class="dots animate">
-                        <div class="dot animate slide-up delay-6"></div>
-                        <div class="dot animate slide-up delay-7"></div>
-                        <div class="dot animate slide-up delay-8"></div>
-                    </div>
+            <div class="dots animate">
+              <div class="dot animate slide-up delay-6"></div>
+              <div class="dot animate slide-up delay-7"></div>
+              <div class="dot animate slide-up delay-8"></div>
+            </div>
+          </div>
+          <div class="text">
+            <p>Event Name: Mock Placements</p>
+            <p>Category: Flagship</p>
+            <p>Description: Mock placement typically simulates a real-life job placement process to help students and
+              job seekers prepare for interviews and assessments that consists of two tracks namely IT and Core. It
+              helps participants in improving their performance and increasing their chances of success in real job
+              placements.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-3">
+        <div class="wrap animate pop">
+          <div class="overlay"
+            style="background-image: url('hackamaze.webp'); background-size: 100%;background-repeat: no-repeat;">
+            <div class="overlay-content animate slide-left delay-2">
+
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+              <div class="dot animate slide-up delay-6"></div>
+              <div class="dot animate slide-up delay-7"></div>
+              <div class="dot animate slide-up delay-8"></div>
+            </div>
+          </div>
+          <div class="text">
+            <p>Event Name: Hack-A-Maze</p>
+            <p>Category: Flagship</p>
+            <p>Description: Hack-A-Maze is an event to test the electronic and programming skills of engineers. where
+              bots are passed through mazes and the bot which passes the maze quickly is considered as the winner.</p>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="col-sm-3">
+        <div class="wrap animate pop">
+          <div class="overlay"
+            style="background-image: url('mechronics.webp'); background-size: 100%;background-repeat: no-repeat;">
+            <div class="overlay-content animate slide-left delay-2">
+
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+              <div class="dot animate slide-up delay-6"></div>
+              <div class="dot animate slide-up delay-7"></div>
+              <div class="dot animate slide-up delay-8"></div>
+            </div>
+          </div>
+          <div class="text">
+            <p>Event Name: Mechronics</p>
+            <p>Category: Flagship</p>
+            <p>Description: Mechronins, an event where participant’s hold over technical knowledge is tested through fun
+              yet very informative rounds. This event has many different forms including puzzles, quest and educational
+              presentations.
+              Teams performing the best will be qualified</p>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+  </div>
+  <h1 class=".display-1--light" style="color: white;text-align: center ;">General Events</h1>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="wrap animate pop">
+        <div class="overlay"
+          style="background-image: url('ar\ wizards.webp'); background-size: 100%;background-repeat: no-repeat;">
+          <div class="overlay-content animate slide-left delay-2">
+
+          </div>
+          <div class="image-content animate slide delay-5"></div>
+          <div class="dots animate">
+            <div class="dot animate slide-up delay-6"></div>
+            <div class="dot animate slide-up delay-7"></div>
+            <div class="dot animate slide-up delay-8"></div>
+          </div>
+        </div>
+        <div class="text">
+          <p>Event Name: AR Wizards: The magic of reality</p>
+          <p>Category: General</p>
+          <p>Description: Participants will be tasked to find objects in the AR world that will give participants access
+            to a file containing broken code in both C++ and Java programming languages.
+            Participants will work together to combine the code and fix the errors to create a functional program.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="wrap animate pop">
+        <div class="overlay"
+          style="background-image: url('Aranyani\ .webp'); background-size: 100%;background-repeat: no-repeat;">
+          <div class="overlay-content animate slide-left delay-2">
+
+          </div>
+          <div class="image-content animate slide delay-5"></div>
+          <div class="dots animate">
+            <div class="dot animate slide-up delay-6"></div>
+            <div class="dot animate slide-up delay-7"></div>
+            <div class="dot animate slide-up delay-8"></div>
+          </div>
+        </div>
+        <div class="text">
+          <p>Event Name: ARANYANI</p>
+          <p>Category: General</p>
+          <p>Description: ARANYANI is a sustainable event focusing on driving awareness among the future generations to
+            be more eco-friendly and helps in upskilling creative thinking by building sustainable constructions from
+            scratch.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="wrap animate pop">
+        <div class="overlay"
+          style="background-image: url('Clash\ of\ Codes\ 2\ final.webp'); background-size: 100%;background-repeat: no-repeat;">
+          <div class="overlay-content animate slide-left delay-2">
+
+          </div>
+          <div class="image-content animate slide delay-5"></div>
+          <div class="dots animate">
+            <div class="dot animate slide-up delay-6"></div>
+            <div class="dot animate slide-up delay-7"></div>
+            <div class="dot animate slide-up delay-8"></div>
+          </div>
         </div>
         <div class="text">
           <p>Event Name: Clash Of Code</p>
           <p>Category: General</p>
-          <p>Description: Clash of Code is the ultimate coding competition where you can showcase your skills and compete against other talented coders. Join us for an unforgettable experience and let's see who emerges as the ultimate coding champion!!</p>
+          <p>Description: Clash of Code is the ultimate coding competition where you can showcase your skills and
+            compete against other talented coders. Join us for an unforgettable experience and let's see who emerges as
+            the ultimate coding champion!!</p>
         </div>
+      </div>
     </div>
-</div>
-<div class="col-sm-3">
-  <div class="wrap animate pop">
-      <div class="overlay"
-      style="background-image: url('DE!BUG\ FEVER.webp'); background-size: 100%;background-repeat: no-repeat;">
-          <div class="overlay-content animate slide-left delay-2">
-              
-          </div>
-          <div class="image-content animate slide delay-5"></div>
-                  <div class="dots animate">
-                      <div class="dot animate slide-up delay-6"></div>
-                      <div class="dot animate slide-up delay-7"></div>
-                      <div class="dot animate slide-up delay-8"></div>
-                  </div>
-      </div>
-      <div class="text">
-        <p>Event Name: de!Bug Fever</p>
-        <p>Category: General</p>
-        <p>Description: Join us for an exciting event aimed at reducing the impact of e-waste use on the environment while honing your technical skills! de!Bug Fever is structured to make existing circuits more efficient by debugging and finding errors, and coming up with solutions to address issues in circuits.</p>
-      </div>
-  </div>
-</div>
-  
-  <div class="row">
     <div class="col-sm-3">
       <div class="wrap animate pop">
+        <div class="overlay"
+          style="background-image: url('DE!BUG\ FEVER.webp'); background-size: 100%;background-repeat: no-repeat;">
+          <div class="overlay-content animate slide-left delay-2">
+
+          </div>
+          <div class="image-content animate slide delay-5"></div>
+          <div class="dots animate">
+            <div class="dot animate slide-up delay-6"></div>
+            <div class="dot animate slide-up delay-7"></div>
+            <div class="dot animate slide-up delay-8"></div>
+          </div>
+        </div>
+        <div class="text">
+          <p>Event Name: de!Bug Fever</p>
+          <p>Category: General</p>
+          <p>Description: Join us for an exciting event aimed at reducing the impact of e-waste use on the environment
+            while honing your technical skills! de!Bug Fever is structured to make existing circuits more efficient by
+            debugging and finding errors, and coming up with solutions to address issues in circuits.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="wrap animate pop">
           <div class="overlay"
-          style="background-image: url('IMG-20230316-WA0010.webp'); background-size: 100%;background-repeat: no-repeat;">
-              <div class="overlay-content animate slide-left delay-2">
-                  
-              </div>
-              <div class="image-content animate slide delay-5"></div>
-                      <div class="dots animate">
-                          <div class="dot animate slide-up delay-6"></div>
-                          <div class="dot animate slide-up delay-7"></div>
-                          <div class="dot animate slide-up delay-8"></div>
-                      </div>
+            style="background-image: url('IMG-20230316-WA0010.webp'); background-size: 100%;background-repeat: no-repeat;">
+            <div class="overlay-content animate slide-left delay-2">
+
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+              <div class="dot animate slide-up delay-6"></div>
+              <div class="dot animate slide-up delay-7"></div>
+              <div class="dot animate slide-up delay-8"></div>
+            </div>
           </div>
           <div class="text">
             <p>Event Name: FIREQUEST</p>
             <p>Category: General</p>
-            <p>Description: FIREQUEST is an event where the participants are given problem statements that are thought-provoking and related to the theme.
-The participants have to give a satisfactory solution to the proposed problem statement using Firebase (A Google technology) for the database.</p>
+            <p>Description: FIREQUEST is an event where the participants are given problem statements that are
+              thought-provoking and related to the theme.
+              The participants have to give a satisfactory solution to the proposed problem statement using Firebase (A
+              Google technology) for the database.</p>
           </div>
+        </div>
       </div>
-  </div>
-  <div class="col-sm-3">
-    <div class="wrap animate pop">
-        <div class="overlay"
-        style="background-image: url('technokalaji.webp'); background-size: 100%;background-repeat: no-repeat;">
+      <div class="col-sm-3">
+        <div class="wrap animate pop">
+          <div class="overlay"
+            style="background-image: url('technokalaji.webp'); background-size: 100%;background-repeat: no-repeat;">
             <div class="overlay-content animate slide-left delay-2">
-                
+
             </div>
             <div class="image-content animate slide delay-5"></div>
-                    <div class="dots animate">
-                        <div class="dot animate slide-up delay-6"></div>
-                        <div class="dot animate slide-up delay-7"></div>
-                        <div class="dot animate slide-up delay-8"></div>
-                    </div>
+            <div class="dots animate">
+              <div class="dot animate slide-up delay-6"></div>
+              <div class="dot animate slide-up delay-7"></div>
+              <div class="dot animate slide-up delay-8"></div>
+            </div>
+          </div>
+          <div class="text">
+            <p>Event Name: TechKnowಕಾಳಜಿ</p>
+            <p>Category: General</p>
+            <p>Description: TechKnowಕಾಳಜಿ ಎಂಬುವುದು ಚೇತನ ತಂಡದಿಂದ ಆಯೋಜಿಸಲಾದ ಕಾರ್ಯಕ್ರಮವಾಗಿದೆ. ಈ ಕಾರ್ಯಕ್ರಮವು
+              ವಿದ್ಯಾರ್ಥಿಗಳಲ್ಲಿ ಪರಿಸರದ ಕುರಿತಾದ ಜ್ಞಾನವನ್ನು ಹೆಚ್ಚಿಸುವುದರ ಬಗ್ಗೆ ಗಮನಿಸಲಾಗಿದೆ. ಅದರೊಂದಿಗೆ, ಪರಿಸರದ ವಿವಿಧ
+              ದುಸ್ಥಿತಿಗಳನ್ನು ವಿಶ್ಲೇಷಿಸಿ, ವಿಭಿನ್ನ ಆಲೋಚನೆಗಳನ್ನು ಮತ್ತು ಪರಿಹಾರಗಳನ್ನು ಅನ್ವೇಷಿಸಲು ಅವಕಾಶ ನೀಡಲಾಗುತ್ತದೆ.
+            </p>
+          </div>
+
         </div>
-        <div class="text">
-          <p>Event Name: TechKnowಕಾಳಜಿ</p>
-          <p>Category: General</p>
-          <p>Description: TechKnowಕಾಳಜಿ ಎಂಬುವುದು ಚೇತನ ತಂಡದಿಂದ ಆಯೋಜಿಸಲಾದ  ಕಾರ್ಯಕ್ರಮವಾಗಿದೆ. ಈ ಕಾರ್ಯಕ್ರಮವು ವಿದ್ಯಾರ್ಥಿಗಳಲ್ಲಿ ಪರಿಸರದ ಕುರಿತಾದ ಜ್ಞಾನವನ್ನು ಹೆಚ್ಚಿಸುವುದರ ಬಗ್ಗೆ ಗಮನಿಸಲಾಗಿದೆ. ಅದರೊಂದಿಗೆ, ಪರಿಸರದ ವಿವಿಧ ದುಸ್ಥಿತಿಗಳನ್ನು ವಿಶ್ಲೇಷಿಸಿ, ವಿಭಿನ್ನ ಆಲೋಚನೆಗಳನ್ನು ಮತ್ತು ಪರಿಹಾರಗಳನ್ನು ಅನ್ವೇಷಿಸಲು ಅವಕಾಶ ನೀಡಲಾಗುತ್ತದೆ.
-          </p>
+
+      </div>
+      <div class="col-sm-3">
+        <div class="wrap animate pop">
+          <div class="overlay"
+            style="background-image: url('ipl.webp'); background-size: 100%;background-repeat: no-repeat;">
+            <div class="overlay-content animate slide-left delay-2">
+
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+              <div class="dot animate slide-up delay-6"></div>
+              <div class="dot animate slide-up delay-7"></div>
+              <div class="dot animate slide-up delay-8"></div>
+            </div>
+          </div>
+          <div class="text">
+            <p>Event Name: IPL Auction</p>
+            <p>Category: General</p>
+            <p>Description: IPL Auction is an event where the participants have to make a team by buying players using
+              the given budget and points assigned to each player. Final score of the team will be calculated by summing
+              up the ratings of each player assigned by ICC.</p>
+          </div>
         </div>
-        
+      </div>
+      <div class="col-sm-3">
+        <div class="wrap animate pop">
+          <div class="overlay"
+            style="background-image: url('Sanjana\ C\ K_Escape\ the\ Crash\ \(1\).webp'); background-size: 100%;background-repeat: no-repeat;">
+            <div class="overlay-content animate slide-left delay-2">
+
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+              <div class="dot animate slide-up delay-6"></div>
+              <div class="dot animate slide-up delay-7"></div>
+              <div class="dot animate slide-up delay-8"></div>
+            </div>
+          </div>
+          <div class="text">
+            <p>Event Name: Escape The Crash</p>
+            <p>Category: General</p>
+            <p>Description:
+              Escape the Crash is a fun-filled event designed to test the problem-solving skills of the participants. It
+              adds a new dimension to sustainability and motivates the participants to think beyond the limits of
+              imagination.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    
-</div>
-<div class="col-sm-3">
-  <div class="wrap animate pop">
-      <div class="overlay"
-      style="background-image: url('ipl.webp'); background-size: 100%;background-repeat: no-repeat;">
-          <div class="overlay-content animate slide-left delay-2">
-              
-          </div>
-          <div class="image-content animate slide delay-5"></div>
-                  <div class="dots animate">
-                      <div class="dot animate slide-up delay-6"></div>
-                      <div class="dot animate slide-up delay-7"></div>
-                      <div class="dot animate slide-up delay-8"></div>
-                  </div>
-      </div>
-          <div class="text">
-              <p>Event Name: IPL Auction</p>
-              <p>Category: General</p>
-              <p>Description: IPL Auction is an event where the participants have to make a team by buying players using the given budget and points assigned to each player. Final score of the team will be calculated by summing up the ratings of each player assigned by ICC.</p>
-          </div>
-  </div>
-</div>
-<div class="col-sm-3">
-  <div class="wrap animate pop">
-      <div class="overlay"
-      style="background-image: url('Sanjana\ C\ K_Escape\ the\ Crash\ \(1\).webp'); background-size: 100%;background-repeat: no-repeat;">
-          <div class="overlay-content animate slide-left delay-2">
-              
-          </div>
-          <div class="image-content animate slide delay-5"></div>
-                  <div class="dots animate">
-                      <div class="dot animate slide-up delay-6"></div>
-                      <div class="dot animate slide-up delay-7"></div>
-                      <div class="dot animate slide-up delay-8"></div>
-                  </div>
-      </div>
-          <div class="text">
-              <p>Event Name: Escape The Crash</p>
-              <p>Category: General</p>
-              <p>Description:
-                Escape the Crash is a fun-filled event designed to test the problem-solving skills of the participants. It adds a new dimension to sustainability and motivates the participants to think beyond the limits of imagination.</p>
-          </div>
-  </div>
-</div>
-</div>
 
   </div>
   <!-- <!-- <div class="row three">
@@ -829,55 +901,63 @@ The participants have to give a satisfactory solution to the proposed problem st
         </div> 
         </div>
       </div> -->
-      <h1 class=".display-1--light" style="color: white;text-align: center ;">Gaming</h1>
-      <div class="row">
-        <div class="col-sm-3"> 
-          <div class="wrap animate pop">
-              <div class="overlay"  style="background-image: url(./gaming.webp);background-size: 100%;background-repeat: no-repeat;text-align: center;">
-                  <div class="overlay-content animate slide-left delay-2">
-                      <h1 class="animate slide-left pop delay-4"></h1>
-                      <p class="animate slide-left pop delay-5" style="color: white; ;">Laser Tag</em></p>
-                  </div>
-                  <div class="image-content animate slide delay-5"></div>
-                          <div class="dots animate">
-                              <div class="dot animate slide-up delay-6"></div>
-                              <div class="dot animate slide-up delay-7"></div>
-                              <div class="dot animate slide-up delay-8"></div>
-                          </div>
-              </div>
-                  <div class="text">
-                      <p>Event Name: Gaming </p>
-
-                       <p>Category: Flagship</p>
-                        
-                       <p> Description:Join us for a thrilling gaming experience with COD Mobile, Checkmania and Valorant. Battle it out with fellow gamers, explore new worlds, and compete for epic prizes. Don't miss out on this excitement!</p>
-                  </div>
-          </div> 
+  <h1 class=".display-1--light" style="color: white;text-align: center ;">Gaming</h1>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="wrap animate pop">
+        <div class="overlay"
+          style="background-image: url(./gaming.webp);background-size: 100%;background-repeat: no-repeat;text-align: center;">
+          <div class="overlay-content animate slide-left delay-2">
+            <h1 class="animate slide-left pop delay-4"></h1>
+            <p class="animate slide-left pop delay-5" style="color: white; ;">Laser Tag</em></p>
           </div>
-          <div class="col-sm-3"> 
-            <div class="wrap animate pop">
-                <div class="overlay"  style="background-image: url(./laser.webp);background-size: 100%;background-repeat: no-repeat;text-align: center;">
-                    <div class="overlay-content animate slide-left delay-2">
-                        <h1 class="animate slide-left pop delay-4"></h1>
-                        <p class="animate slide-left pop delay-5" style="color: white; ;">Laser Tag</em></p>
-                    </div>
-                    <div class="image-content animate slide delay-5"></div>
-                            <div class="dots animate">
-                                <div class="dot animate slide-up delay-6"></div>
-                                <div class="dot animate slide-up delay-7"></div>
-                                <div class="dot animate slide-up delay-8"></div>
-                            </div>
-                </div>
-                    <div class="text">
-                        <p>Event Name:Laser Tag </p>
-  
-                         <p>Category: Flagship</p>
-                          
-<p>Description: Join us for an action-packed, ultimate laser tag game! where you can team up with your fellow students, showcase your tactical skills, and have a blast. Our high-tech types of equipment and immersive arena create an unforgettable experience you won't want to miss.</p>                    </div>
-            </div> 
-            </div>
-            </div>
+          <div class="image-content animate slide delay-5"></div>
+          <div class="dots animate">
+            <div class="dot animate slide-up delay-6"></div>
+            <div class="dot animate slide-up delay-7"></div>
+            <div class="dot animate slide-up delay-8"></div>
+          </div>
+        </div>
+        <div class="text">
+          <p>Event Name: Gaming </p>
+
+          <p>Category: Flagship</p>
+
+          <p> Description:Join us for a thrilling gaming experience with COD Mobile, Checkmania and Valorant. Battle it
+            out with fellow gamers, explore new worlds, and compete for epic prizes. Don't miss out on this excitement!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="wrap animate pop">
+        <div class="overlay"
+          style="background-image: url(./laser.webp);background-size: 100%;background-repeat: no-repeat;text-align: center;">
+          <div class="overlay-content animate slide-left delay-2">
+            <h1 class="animate slide-left pop delay-4"></h1>
+            <p class="animate slide-left pop delay-5" style="color: white; ;">Laser Tag</em></p>
+          </div>
+          <div class="image-content animate slide delay-5"></div>
+          <div class="dots animate">
+            <div class="dot animate slide-up delay-6"></div>
+            <div class="dot animate slide-up delay-7"></div>
+            <div class="dot animate slide-up delay-8"></div>
+          </div>
+        </div>
+        <div class="text">
+          <p>Event Name:Laser Tag </p>
+
+          <p>Category: Flagship</p>
+
+          <p>Description: Join us for an action-packed, ultimate laser tag game! where you can team up with your fellow
+            students, showcase your tactical skills, and have a blast. Our high-tech types of equipment and immersive
+            arena create an unforgettable experience you won't want to miss.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 </body>
+
 </html>

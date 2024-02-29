@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./light_handle.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link src="./events.css">
+</head>
+
+<style>
+    /* .events {
+        background-image: url('./gal-bg.jpeg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        height: 100vh;
+    }
+
+    .events::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+    } */
+
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-weight: 100;
+        /* font-family: 'Open Sans', sans-serif; */
+        font-family: "montserrat-bold", sans-serif;
+    }
+
+    .parallax {
+        /* background: url('https://images.pexels.com/photos/192136/pexels-photo-192136.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') repeat fixed 100%; */
+        background: linear-gradient(rgba(0, 0, 0, 0.7),
+                rgba(0, 0, 0, 0.7)), url('./gal-bg.jpeg') repeat fixed 100%;
+        background-size: cover;
+        background-position: center;
+        color: aliceblue;
+        -webkit-box-shadow: inset 0px -63px 23px -23px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: inset 0px -63px 23px -23px rgba(0, 0, 0, 0.75);
+        box-shadow: inset 0px -63px 23px -23px rgba(0, 0, 0, 0.75);
+
+    }
+
+    .parallax-inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 100vh;
+    }
+
+    .parallax-inner img {
+        width: 400px;
+        -webkit-filter: drop-shadow(0px 0px 10px rgba(251, 246, 238, 0.805));
+        filter: drop-shadow(0px 0px 10px rgba(251, 246, 238, 0.805));
+    }
+
+    .events {
+        background-color: black;
+    }
+
+    h3 {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+        color: white;
+    }
+
+    .card-container {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+    .card-container::before {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+        transform: translate3d(0, 0, 0) scale(0.95);
+        filter: blur(20px);
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        overflow: hidden;
+    }
+
+    .card .img-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+        transition: scale 0.6s, rotate 0.6s, filter 1s;
+    }
+
+    .card .img-content svg {
+        width: 50px;
+        height: 50px;
+        fill: #212121;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+
+    .card .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        color: #e8e8e8;
+        padding: 20px 24px;
+        line-height: 1.5;
+        border-radius: 5px;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(50px);
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+
+    .card .content .heading {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .card:hover .content {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .card:hover .img-content {
+        scale: 2.5;
+        rotate: 30deg;
+        filter: blur(7px);
+    }
+
+    .card:hover .img-content svg {
+        fill: transparent;
+    }
+
+    .row-4 {
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .events {
+        padding: 40px;
+    }
+
+    @media only screen and (max-width: 500px) {
+        .parallax-inner img {
+            width: 80%;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+</style>
+
+<body>
+    <!-- <section class="events">
+
+    </section> -->
+
+
+    <section class="1">
+        <section class="parallax">
+            <div class="parallax-inner">
+                <br>
+                <img src="./no_tag_dark.png" alt="">
+                <h1>EVENT LIST</h1>
+                <svg style="width: 30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="downarrow">
+                    <path
+                        d="M15.4 16.71a1 1 0 0 0 1.41 0l10-10a1 1 0 0 0 0-1.42 1 1 0 0 0-1.41 0l-9.3 9.3-9.29-9.3a1 1 0 0 0-1.41 0 1 1 0 0 0 0 1.42Z"
+                        fill="#ffffff" class="color000000 svgShape"></path>
+                    <path
+                        d="m25.4 15.29-9.3 9.3-9.29-9.3a1 1 0 0 0-1.41 0 1 1 0 0 0 0 1.42l10 10a1 1 0 0 0 1.41 0l10-10a1 1 0 0 0 0-1.42 1 1 0 0 0-1.41 0Z"
+                        fill="#ffffff" class="color000000 svgShape"></path>
+                </svg>
+                <br>
+            </div>
+        </section>
+        <div class="events">
+            <div>
+                <h1>Flagship Events</h1>
+                <div class="row-4">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="img-content">
+
+                            </div>
+                            <div class="content">
+                                <p class="heading">Card Hover</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipii
+                                    voluptas ten mollitia pariatur odit, ab
+                                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+                                    necessitatibus dignissimos molestias.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="img-content">
+
+                            </div>
+                            <div class="content">
+                                <p class="heading">Card Hover</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipii
+                                    voluptas ten mollitia pariatur odit, ab
+                                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+                                    necessitatibus dignissimos molestias.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="img-content">
+
+                            </div>
+                            <div class="content">
+                                <p class="heading">Card Hover</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipii
+                                    voluptas ten mollitia pariatur odit, ab
+                                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+                                    necessitatibus dignissimos molestias.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="img-content">
+
+                            </div>
+                            <div class="content">
+                                <p class="heading">Card Hover</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipii
+                                    voluptas ten mollitia pariatur odit, ab
+                                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+                                    necessitatibus dignissimos molestias.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1>Non-Flagship Events</h1>
+                <div class="row-4">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="img-content">
+
+                            </div>
+                            <div class="content">
+                                <p class="heading">Card Hover</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipii
+                                    voluptas ten mollitia pariatur odit, ab
+                                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+                                    necessitatibus dignissimos molestias.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="img-content">
+
+                            </div>
+                            <div class="content">
+                                <p class="heading">Card Hover</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipii
+                                    voluptas ten mollitia pariatur odit, ab
+                                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+                                    necessitatibus dignissimos molestias.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="img-content">
+
+                            </div>
+                            <div class="content">
+                                <p class="heading">Card Hover</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipii
+                                    voluptas ten mollitia pariatur odit, ab
+                                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+                                    necessitatibus dignissimos molestias.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="img-content">
+
+                            </div>
+                            <div class="content">
+                                <p class="heading">Card Hover</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipii
+                                    voluptas ten mollitia pariatur odit, ab
+                                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+                                    necessitatibus dignissimos molestias.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1>Flagship Events</h1>
+                <div class="row-4">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="img-content">
+
+                            </div>
+                            <div class="content">
+                                <p class="heading">Card Hover</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipii
+                                    voluptas ten mollitia pariatur odit, ab
+                                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+                                    necessitatibus dignissimos molestias.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="img-content">
+
+                            </div>
+                            <div class="content">
+                                <p class="heading">Card Hover</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipii
+                                    voluptas ten mollitia pariatur odit, ab
+                                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+                                    necessitatibus dignissimos molestias.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="img-content">
+
+                            </div>
+                            <div class="content">
+                                <p class="heading">Card Hover</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipii
+                                    voluptas ten mollitia pariatur odit, ab
+                                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+                                    necessitatibus dignissimos molestias.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
