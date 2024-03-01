@@ -1699,7 +1699,12 @@ h3,
  * ## main navigation 
  * ------------------------------------------------------------------- */
 .header-nav {
-    background: #0C0C0C;
+    /* background: rgb(12, 12, 12, 0.8); */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.65);
+    /* border-radius: 12px; */
+    border: 1px solid rgba(255, 255, 255, 0.125);
     color: rgba(255, 255, 255, 0.25);
     font-family: "montserrat-light", sans-serif;
     font-size: 1.3rem;
