@@ -15,8 +15,18 @@ html {
 
     height: 100%;
 
-    background: white;
+    /* background: #111111; */
+    /* background-image: radial-gradient( circle 975px at 2.6% 48.3%,  rgba(0,8,120,1) 0%, rgba(95,184,224,1) 99.7% ); */
+    background-image: radial-gradient( circle 815px at 23.4% -21.8%,  rgba(9,29,85,1) 0.2%, rgba(0,0,0,1) 100.2% );
+    /* background-image: radial-gradient(circle 976px at 51.2% 51%, rgba(11, 27, 103, 1) 0%, rgba(16, 66, 157, 1) 0%, rgba(11, 27, 103, 1) 17.3%, rgba(11, 27, 103, 1) 58.8%, rgba(11, 27, 103, 1) 71.4%, rgba(16, 66, 157, 1) 100.2%, rgba(187, 187, 187, 1) 100.2%); */
 
+
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .spr-card .icon .fa {
@@ -2542,7 +2552,7 @@ html.cl-loaded .home-content__main {
 }
 
 .stats__col1 {
-    margin: 5.4rem 0;
+    /* margin: 20px 0; */
     padding: 0 2rem;
     position: relative;
     overflow: hidden;
